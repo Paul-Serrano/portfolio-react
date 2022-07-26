@@ -1,12 +1,25 @@
+import codingLangList from "../../data/codingLangList";
+import ProjectList from "../../data/projectList";
+import ProjectLangIcon from "../parts/ProjectLangIcon";
+
 function Project(props) {
-    return(
-        <a href={props.item.link}>
-            <h2>{props.item.name}</h2>
-            <div>
-                <img src={props.item.lang} alt=""/>
+
+    const codingLang = codingLangList.map(item => {
+        return <ProjectLangIcon
+            key={item.key}
+            src={item.src}
+            alt={item.alt}
+        />
+    })
+
+    return (
+        <div className="project">
+            <a href="#" className="project-txt">{props.title}</a>
+            <div className="project-content">
+                {codingLang}
             </div>
-        </a>
+        </div>
     )
 }
 
-export default Project();
+export default Project;

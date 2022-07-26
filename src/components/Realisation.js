@@ -1,20 +1,30 @@
 import Project from "./Realisations/Project";
+import BlockTitle from "./parts/BlockTitle";
 import projectList from "../data/projectList";
+import BlockNav from "./parts/BlockNav";
 
 function Realisation() {
 
     const projects = projectList.map(item => {
         return <Project
             key={item.key}
-            name={item.project1.name}
-            link={item.project1.link}
-            lang={item.project1.lang[0].src}
+            title={item.name}
         />
     })
 
-    return(
+    return (
         <div className="realisations">
-            {projects}
+            <BlockTitle
+                title="Réalisations"
+            />
+            <div className="realisation-content">
+                {projects}
+            </div>
+            <BlockNav
+                left="Compétences"
+                center="Parcours Porfessionnel"
+                right="Parcours Académique"
+            />
         </div>
     )
 }

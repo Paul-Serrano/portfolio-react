@@ -6,36 +6,37 @@ import mySqlIcon from "../../public/img/mysql.png"
 
 
 
-const codingLang = {
-    css: {
+const codingLangList = [
+    {
+        key: 1,
         name: "CSS",
-        src: {cssIcon},
+        src: cssIcon,
         alt: "Icône CSS"
     },
-
-    html: {
+    {
+        key: 2,
         name: "HTML",
-        src: {htmlIcon},
+        src: htmlIcon,
         alt: "Icône HTML"
     },
-
-    javascript: {
+    {
+        key: 3,
         name: "Javascript",
-        src: {jsIcon},
+        src: jsIcon,
         alt: "Icône Javascript"
     },
-
-    php: {
+    {
+        key: 4,
         name: "PHP",
-        src: {phpIcon},
+        src: phpIcon,
         alt: "Icône PHP"
     },
-
-    mySql: {
+    {
+        key: 5,
         name: "mySql",
-        src: {mySqlIcon},
+        src: mySqlIcon,
         alt: "Icône mySql"
     }
-}
+]
 
-export default codingLang
+export default codingLangList;

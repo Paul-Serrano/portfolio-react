@@ -29,7 +29,7 @@ body {
 }
 
 .nav, .footer, .settings {
-  height: 14%;
+  height: 15%;
 }
 
 .nav {
@@ -45,7 +45,7 @@ body {
 }
 
 .nav-button {
-  width: 10%;
+  width: 7.5%;
   background-color: rgba(0,0,0,0);
   border: none;
   display: flex;

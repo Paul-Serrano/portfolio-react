@@ -1,5 +1,5 @@
 import codingLangList from "../../data/codingLangList";
-import ProjectList from "../../data/projectList";
+import projectList from "../../data/projectList";
 import ProjectLangIcon from "../parts/ProjectLangIcon";
 
 function Project(props) {
@@ -11,6 +11,7 @@ function Project(props) {
             alt={item.alt}
         />
     })
+
 
     return (
         <div className="project">

@@ -1,4 +1,4 @@
-import menu from "../../../public/img/menu.png"
+import menu from "../../img/menu.png"
 
 function Nav() {
     return (

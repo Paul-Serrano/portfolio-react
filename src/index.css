@@ -284,6 +284,65 @@ body {
 
 /*Realisation -- end*/
 
+/*Competences -- start*/
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 5px solid #CE1126;
+  height: 85%;
+  font-size: 1em
+}
+
+.languages-block, .environment-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30%;
+}
+
+.skills-title {
+  font-size: 1.5em;
+  color: #00BCD4;
+  margin-bottom: 5%;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+.environment {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.lang-icon {
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.environment-icon {
+  width: 10%;
+  align-self: center;
+  justify-self: center;
+}
+
+/*Compétences -- end*/
+
 
 
 

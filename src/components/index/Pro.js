@@ -1,8 +1,8 @@
 import Block from "../../components/parts/Block"
-import realisationIcon from "../../../public/img/website.png"
-import competencesIcon from "../../../public/img/skills.png"
-import proIcon from "../../../public/img/work.png"
-import acadIcon from "../../../public/img/study.png"
+import realisationIcon from "../../img/website.png"
+import competencesIcon from "../../img/skills.png"
+import proIcon from "../../img/work.png"
+import acadIcon from "../../img/study.png"
 
 function Pro() {
     return (

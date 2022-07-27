@@ -1,8 +1,8 @@
-import facebookIcon from "../../../public/img/facebook.png"
-import mailIcon from "../../../public/img/gmail.png"
-import twitterIcon from "../../../public/img/twitter.png"
-import linkedinIcon from "../../../public/img/linkedin.png"
-import githubIcon from "../../../public/img/github.png"
+import facebookIcon from "../../img/facebook.png"
+import mailIcon from "../../img/gmail.png"
+import twitterIcon from "../../img/twitter.png"
+import linkedinIcon from "../../img/linkedin.png"
+import githubIcon from "../../img/github.png"
 
 function Footer() {
     return(

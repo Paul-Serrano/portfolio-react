@@ -1,8 +1,11 @@
-import cssIcon from "../../public/img/css.png"
-import htmlIcon from "../../public/img/html.png"
-import jsIcon from "../../public/img/javascript.png"
-import phpIcon from "../../public/img/php.png"
-import mySqlIcon from "../../public/img/mysql.png"
+import cssIcon from "../img/css.png"
+import htmlIcon from "../img/html.png"
+import jsIcon from "../img/javascript.png"
+import phpIcon from "../img/php.png"
+import mySqlIcon from "../img/mysql.png"
+import java from "../img/java.png"
+import react from "../img/react.png"
+import jquery from "../img/jquery.png"
 
 
 
@@ -36,6 +39,24 @@ const codingLangList = [
         name: "mySql",
         src: mySqlIcon,
         alt: "Icône mySql"
+    },
+    {
+        key: 6,
+        name: "React",
+        src: react,
+        alt: "Icône React"
+    },
+    {
+        key: 7,
+        name: "Java",
+        src: java,
+        alt: "Icône Java"
+    },
+    {
+        key: 8,
+        name: "jQuery",
+        src: jquery,
+        alt: "Icône jQuery"
     }
 ]
 

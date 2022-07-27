@@ -1,6 +1,6 @@
 function ProjectLangIcon(props) {
     return (
-        <img className="project-icon" src={props.src} alt={props.alt}/>
+        <img className={props.class} src={props.src} alt={props.alt}/>
     )
 }
 

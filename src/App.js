@@ -5,6 +5,7 @@ import Perso from "./components/index/Perso"
 import Footer from "./components/index/Footer"
 import Option from "./components/Option";
 import Realisation from "./components/Realisation";
+import Competence from "./components/Competences";
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <main className="main">
             <div className="left-side">
                 <Nav/>
-                <Pro/>
+                <Competence/>
             </div>
             <div className="right-side">
                 <Perso/>

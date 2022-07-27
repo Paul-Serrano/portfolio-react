@@ -1,4 +1,4 @@
-import back from "../../../public/img/back-arrow.png"
+import back from "../../img/back-arrow.png"
 
 function BlockTitle(props) {
     return(

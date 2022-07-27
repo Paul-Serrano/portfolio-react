@@ -1,8 +1,8 @@
 import Block from "../../components/parts/Block"
-import aProposIcon from "../../../public/img/self.png"
-import voyageIcon from "../../../public/img/travel.png"
-import loisirIcon from "../../../public/img/hobby.png"
-import bonusIcon from "../../../public/img/bonus.png"
+import aProposIcon from "../../img/self.png"
+import voyageIcon from "../../img/travel.png"
+import loisirIcon from "../../img/hobby.png"
+import bonusIcon from "../../img/bonus.png"
 
 function Perso() {
     return (

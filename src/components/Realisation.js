@@ -1,4 +1,4 @@
-import Project from "./Realisations/Project";
+import Project from "./parts/Project";
 import BlockTitle from "./parts/BlockTitle";
 import projectList from "../data/projectList";
 import BlockNav from "./parts/BlockNav";

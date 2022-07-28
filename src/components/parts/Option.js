@@ -1,8 +1,8 @@
-import sun from "../img/sun.png"
-import moon from "../img/moon.png"
-import french from "../img/france.png"
-import english from "../img/uk.png"
-import back from "../img/back-arrow.png"
+import sun from "../../img/sun.png"
+import moon from "../../img/moon.png"
+import french from "../../img/france.png"
+import english from "../../img/uk.png"
+import back from "../../img/back-arrow.png"
 
 function Option() {
     return (

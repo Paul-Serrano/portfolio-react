@@ -3,9 +3,11 @@ import Nav from "./components/index/Nav"
 import Pro from "./components/index/Pro"
 import Perso from "./components/index/Perso"
 import Footer from "./components/index/Footer"
-import Option from "./components/Option";
+import Option from "./components/parts/Option";
 import Realisation from "./components/Realisation";
 import Competence from "./components/Competences";
+import ParcoursAcad from "./components/ParcoursAcad";
+import ParcoursPro from "./components/ParcoursPro";
 
 function App() {
 
@@ -14,7 +16,7 @@ function App() {
         <main className="main">
             <div className="left-side">
                 <Nav/>
-                <Competence/>
+                <ParcoursPro/>
             </div>
             <div className="right-side">
                 <Perso/>

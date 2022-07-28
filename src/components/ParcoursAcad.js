@@ -15,10 +15,16 @@ function ParcoursAcad() {
         />
     })
 
+    function closeAcad() {
+        document.getElementsByClassName("pro")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+    }
+
     return(
         <div className="parcours-acad">
             <BlockTitle
                 title="Parcours Académique"
+                close={closeAcad}
             />
             {studies}
             <BlockNav

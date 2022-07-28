@@ -12,11 +12,16 @@ function ParcoursPro() {
         />
     })
 
+    function closePro() {
+        document.getElementsByClassName("pro")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-pro")[0].style.display = "none";
+    }
 
     return(
         <div className="parcours-pro">
             <BlockTitle
                 title="Parcours Professionnel"
+                close={closePro}
             />
             <div className="work-content">
                 {work}

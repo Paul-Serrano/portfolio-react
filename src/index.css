@@ -10,6 +10,25 @@ img {
   max-width: 100%;
 }
 
+/*scrollbar -- start*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CE1126;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*scrollbar -- end*/
+
 body {
   background-color: #191919;
   color: #d3d3d3;
@@ -203,7 +222,7 @@ body {
   width: 101%;
   border-top: 5px solid #CE1126;
   display: flex;
-  height: 10%;
+  height: 7.5%;
 }
 
 .block-nav-btn {
@@ -237,7 +256,7 @@ body {
 /*Realisation -- start*/
 
 .realisations {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -287,7 +306,7 @@ body {
 /*Competences -- start*/
 
 .skills {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -346,7 +365,7 @@ body {
 /*Parcours Académique -- start*/
 
 .parcours-acad {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -366,7 +385,7 @@ body {
 /*Parcours Professionnel -- start*/
 
 .parcours-pro {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -381,33 +400,12 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 50%;
+  height: 75%;
   margin: 5% 0;
   white-space: nowrap;
   width: 90%;
-  padding: 20% 0 0;
+  padding: 5% 0 0;
 }
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #d3d3d3;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #CE1126;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 
 .work {
   display: flex;
@@ -415,6 +413,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
+  margin: 2.5% 0 0;
 }
 
 .work p {
@@ -424,7 +423,6 @@ body {
 .work-title-block {
   font-size: 1.25em;
   color: #00BCD4;
-  margin-top: 5%;
 }
 
 /*Parcours Professionnel -- end*/

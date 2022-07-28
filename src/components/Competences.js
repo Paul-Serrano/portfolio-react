@@ -29,10 +29,16 @@ function Competence() {
         )
     })
 
+    function closeComp() {
+        document.getElementsByClassName("pro")[0].style.display = "flex";
+        document.getElementsByClassName("skills")[0].style.display = "none";
+    }
+
     return(
         <div className="skills">
             <BlockTitle
                 title="Compétences"
+                close={closeComp}
             />
             <div className="languages-block">
                 <p className="skills-title">Langages de développement</p>

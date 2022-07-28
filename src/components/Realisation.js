@@ -12,10 +12,16 @@ function Realisation() {
         />
     })
 
+    function closeReal() {
+        document.getElementsByClassName("pro")[0].style.display = "flex";
+        document.getElementsByClassName("realisations")[0].style.display = "none";
+    }
+
     return (
         <div className="realisations">
             <BlockTitle
                 title="Réalisations"
+                close={closeReal}
             />
             <div className="realisation-content">
                 {projects}

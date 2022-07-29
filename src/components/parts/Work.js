@@ -7,8 +7,11 @@ function Work(props) {
                 <span className="work-company">{props.item.company}</span>
             </div>
             <p className="work-description">{props.item.description}</p>
-            <p className="work-city">{props.item.city}</p>
-            <p className="work-date">{props.item.date}</p>
+            <div className="work-info">
+                <span className="work-city">{props.item.city}</span>
+                <span> // </span>
+                <span className="work-date">{props.item.date}</span>
+            </div>
         </div>
     )
 }

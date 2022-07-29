@@ -17,8 +17,23 @@ function ParcoursPro() {
         document.getElementsByClassName("parcours-pro")[0].style.display = "none";
     }
 
+    function switchComp() {
+        document.getElementsByClassName("skills")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-pro")[0].style.display = "none";
+    }
+
+    function switchReal() {
+        document.getElementsByClassName("realisations")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-pro")[0].style.display = "none";
+    }
+
+    function switchParcoursAcad() {
+        document.getElementsByClassName("parcours-acad")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-pro")[0].style.display = "none";
+    }
+
     return(
-        <div className="parcours-pro">
+        <div className="parcours-pro pro-block">
             <BlockTitle
                 title="Parcours Professionnel"
                 close={closePro}
@@ -28,8 +43,11 @@ function ParcoursPro() {
             </div>
             <BlockNav
                 left="Réalisations"
+                switchl={switchReal}
                 center="Compétences"
+                switchc={switchComp}
                 right="Parcours Académique"
+                switchr={switchParcoursAcad}
             />
         </div>
     )

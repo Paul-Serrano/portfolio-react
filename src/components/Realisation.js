@@ -17,8 +17,23 @@ function Realisation() {
         document.getElementsByClassName("realisations")[0].style.display = "none";
     }
 
+    function switchComp() {
+        document.getElementsByClassName("skills")[0].style.display = "flex";
+        document.getElementsByClassName("realisations")[0].style.display = "none";
+    }
+
+    function switchParcoursPro() {
+        document.getElementsByClassName("parcours-pro")[0].style.display = "flex";
+        document.getElementsByClassName("realisations")[0].style.display = "none";
+    }
+
+    function switchParcoursAcad() {
+        document.getElementsByClassName("parcours-acad")[0].style.display = "flex";
+        document.getElementsByClassName("realisations")[0].style.display = "none";
+    }
+
     return (
-        <div className="realisations">
+        <div className="realisations pro-block">
             <BlockTitle
                 title="Réalisations"
                 close={closeReal}
@@ -28,8 +43,11 @@ function Realisation() {
             </div>
             <BlockNav
                 left="Compétences"
+                switchl={switchComp}
                 center="Parcours Porfessionnel"
+                switchc={switchParcoursPro}
                 right="Parcours Académique"
+                switchr={switchParcoursAcad}
             />
         </div>
     )

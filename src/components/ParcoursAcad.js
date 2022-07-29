@@ -20,8 +20,23 @@ function ParcoursAcad() {
         document.getElementsByClassName("parcours-acad")[0].style.display = "none";
     }
 
+    function switchComp() {
+        document.getElementsByClassName("skills")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+    }
+
+    function switchParcoursPro() {
+        document.getElementsByClassName("parcours-pro")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+    }
+
+    function switchReal() {
+        document.getElementsByClassName("realisations")[0].style.display = "flex";
+        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+    }
+
     return(
-        <div className="parcours-acad">
+        <div className="parcours-acad pro-block">
             <BlockTitle
                 title="Parcours Académique"
                 close={closeAcad}
@@ -29,8 +44,11 @@ function ParcoursAcad() {
             {studies}
             <BlockNav
                 left="Réalisations"
+                switchl={switchReal}
                 center="Compétences"
+                switchc={switchComp}
                 right="Parcours Professionnel"
+                switchr={switchParcoursPro}
             />
         </div>
     )

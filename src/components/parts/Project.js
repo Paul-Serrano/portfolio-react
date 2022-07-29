@@ -19,9 +19,6 @@ function Project(props) {
         //}
     }
 
-    console.log(projectLangs)
-    console.log(<ProjectLangIcon/>)
-
     return (
         <div className="project">
             <a href="src/components/parts/Project#" className="project-txt">{props.title}</a>

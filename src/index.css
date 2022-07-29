@@ -199,7 +199,8 @@ body {
   font-family: Jura;
   font-weight: bold;
   font-size: 2em;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
+  height: 5%;
 }
 
 .block-title-return-btn {
@@ -375,7 +376,7 @@ body {
 }
 
 .study-title {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #00BCD4;
   margin-bottom: 2.5%;
 }
@@ -395,16 +396,15 @@ body {
 }
 
 .work-content {
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 75%;
-  margin: 5% 0;
+  height: 65%;
   white-space: nowrap;
+  padding: 2.5% 0 0;
   width: 90%;
-  padding: 5% 0 0;
 }
 
 .work {
@@ -413,7 +413,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
-  margin: 2.5% 0 0;
+  margin: 3.5% 0 0;
 }
 
 .work p {

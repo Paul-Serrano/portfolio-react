@@ -7,8 +7,6 @@ import environmentList from "../data/environmentList"
 
 function Competence() {
 
-    console.log(codingLangList)
-
     const codingLang = codingLangList.map(item => {
         return (
             <ProjectLangIcon
@@ -34,8 +32,23 @@ function Competence() {
         document.getElementsByClassName("skills")[0].style.display = "none";
     }
 
+    function switchReal() {
+        document.getElementsByClassName("realisations")[0].style.display = "flex";
+        document.getElementsByClassName("skills")[0].style.display = "none";
+    }
+
+    function switchParcoursPro() {
+        document.getElementsByClassName("parcours-pro")[0].style.display = "flex";
+        document.getElementsByClassName("skills")[0].style.display = "none";
+    }
+
+    function switchParcoursAcad() {
+        document.getElementsByClassName("parcours-acad")[0].style.display = "flex";
+        document.getElementsByClassName("skills")[0].style.display = "none";
+    }
+
     return(
-        <div className="skills">
+        <div className="skills comp">
             <BlockTitle
                 title="Compétences"
                 close={closeComp}
@@ -54,8 +67,11 @@ function Competence() {
             </div>
             <BlockNav
                 left="Réalisations"
+                switchl={switchReal}
                 center="Parcours Professionnel"
+                switchc={switchParcoursPro}
                 right="Parcours Académique"
+                switchr={switchParcoursAcad}
             />
         </div>
     )

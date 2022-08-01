@@ -17,6 +17,7 @@ function App() {
         <main className="main">
             <div className="left-side">
                 <Nav/>
+                <Option/>
                 <Pro/>
                 <Realisation/>
                 <Competence/>

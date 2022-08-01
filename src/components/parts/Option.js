@@ -5,9 +5,15 @@ import english from "../../img/uk.png"
 import back from "../../img/back-arrow.png"
 
 function Option() {
+
+    function closeOption() {
+        document.getElementsByClassName("settings")[0].style.display = "none"
+        document.getElementsByClassName("nav")[0].style.display = "flex"
+    }
+
     return (
         <div className="settings">
-            <button className="settings-return-btn">
+            <button className="settings-return-btn" onClick={closeOption}>
                 <img className="settings-return-icon" src={back} alt="Icône retour"/>
             </button>
             <div className="settings-block">

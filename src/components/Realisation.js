@@ -9,6 +9,7 @@ function Realisation() {
         return <Project
             key={item.key}
             title={item.name}
+            link={item.link}
         />
     })
 

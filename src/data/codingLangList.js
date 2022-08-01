@@ -14,49 +14,57 @@ const codingLangList = [
         key: 1,
         name: "CSS",
         src: cssIcon,
-        alt: "Icône CSS"
+        alt: "Icône CSS",
+        skills: ["flexbox, grid, animations, responsive design"]
     },
     {
         key: 2,
         name: "HTML",
         src: htmlIcon,
-        alt: "Icône HTML"
+        alt: "Icône HTML",
+        skills: ["balises"]
     },
     {
         key: 3,
         name: "Javascript",
         src: jsIcon,
-        alt: "Icône Javascript"
+        alt: "Icône Javascript",
+        skills: []
     },
     {
         key: 4,
         name: "PHP",
         src: phpIcon,
-        alt: "Icône PHP"
+        alt: "Icône PHP",
+        skills: []
     },
     {
         key: 5,
         name: "mySql",
         src: mySqlIcon,
-        alt: "Icône mySql"
+        alt: "Icône mySql",
+        skills: []
     },
     {
         key: 6,
         name: "React",
         src: react,
-        alt: "Icône React"
+        alt: "Icône React",
+        skills: []
     },
     {
         key: 7,
         name: "Java",
         src: java,
-        alt: "Icône Java"
+        alt: "Icône Java",
+        skills: []
     },
     {
         key: 8,
         name: "jQuery",
         src: jquery,
-        alt: "Icône jQuery"
+        alt: "Icône jQuery",
+        skills: []
     }
 ]
 

@@ -72,6 +72,8 @@ body {
   align-items: center;
 }
 
+/*Settings -- start*/
+
 .settings {
   display: none;
   justify-content: space-evenly;
@@ -84,10 +86,17 @@ body {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.settings-border-block{
+  border-left: 5px solid #CE1126;
+  border-right: 5px solid #CE1126;
 }
 
 .settings-return-btn {
-  width: 10%;
+  width: 7.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +105,27 @@ body {
 }
 
 .settings-icon {
-  width: 20%;
+  width: 15%;
 }
+
+.settings-btn-block {
+  width: 10%;
+  height: 20px;
+  background-color: #191919;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.settings-btn-bubble {
+  width: 50%;
+  background-color: white;
+  height: 90%;
+  border-radius: 0.5rem;
+}
+
+/*Settings -- end*/
 
 .footer {
   display: flex;
@@ -199,7 +227,7 @@ body {
   font-family: Jura;
   font-weight: bold;
   font-size: 2em;
-  margin-top: 1.5%;
+  margin-top: 5%;
   height: 7.5%;
 }
 
@@ -322,7 +350,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 30%;
+  height: 35%;
 }
 
 .skills-title {
@@ -339,6 +367,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 75%;
+  position: relative;
 }
 
 .environment {
@@ -347,6 +376,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 50%;
+  position: relative;
 }
 
 .lang-icon {
@@ -355,10 +385,67 @@ body {
   justify-self: center;
 }
 
-.environment-icon {
-  width: 10%;
+.env-icon {
+  width: 75%;
   align-self: center;
   justify-self: center;
+}
+
+.lang-bubble {
+  display: none;
+  flex-direction: column;
+  width: 20%;
+  position: absolute;
+  background-color: whitesmoke;
+  color: #191919;
+  border: 5px solid #CE1126;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.5%;
+  z-index: 1;
+}
+
+.lang-bubble-title {
+  font-size: 1.25em;
+  color: #00BCD4;
+}
+
+.lang-bubble-txt {
+  color: #191919;
+}
+
+.env-bubble {
+  display: none;
+  flex-direction: column;
+  width: 20%;
+  position: absolute;
+  background-color: whitesmoke;
+  color: #191919;
+  border: 5px solid #CE1126;
+  top: -75%;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.5%;
+  z-index: 1;
+}
+
+.env-bubble-title {
+  font-size: 1.25em;
+  color: #00BCD4;
+}
+
+.env-bubble-txt {
+  color: #191919;
+}
+
+.lang-block:hover .lang-bubble {
+  display: flex;
+}
+
+.env-block:hover .env-bubble {
+  display: flex;
 }
 
 /*Compétences -- end*/

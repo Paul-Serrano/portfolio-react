@@ -21,7 +21,7 @@ function Project(props) {
 
     return (
         <div className="project">
-            <a href="src/components/parts/Project#" className="project-txt">{props.title}</a>
+            <a href={props.link} className="project-txt" target="_blank">{props.title}</a>
             <div className="project-content">
                 {projectLangs}
             </div>

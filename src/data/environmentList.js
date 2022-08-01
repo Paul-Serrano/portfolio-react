@@ -11,37 +11,43 @@ const environmentList = [
         key: 1,
         name: "Wordpress",
         src: wordpress,
-        alt: "Icône Wordpress"
+        alt: "Icône Wordpress",
+        skills: []
     },
     {
         key: 2,
         name: "Visual Studio",
         src: visualstudio,
-        alt: "Icône Visual Studio"
+        alt: "Icône Visual Studio",
+        skills: []
     },
     {
         key: 3,
         name: "Jetbrains",
         src: jetbrains,
-        alt: "Icône Jetbrains"
+        alt: "Icône Jetbrains",
+        skills: []
     },
     {
         key: 4,
         name: "Figma",
         src: figma,
-        alt: "Icône Figma"
+        alt: "Icône Figma",
+        skills: []
     },
     {
         key: 5,
         name: "Jira",
         src: jira,
-        alt: "Icône Jira"
+        alt: "Icône Jira",
+        skills: []
     },
     {
         key: 6,
         name: "Github",
         src: github,
-        alt: "Icône Github"
+        alt: "Icône Github",
+        skills: []
     }
 ]
 

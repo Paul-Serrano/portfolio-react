@@ -4,25 +4,29 @@ import ProjectLangIcon from "./parts/ProjectLangIcon";
 import projectList from "../data/projectList";
 import codingLangList from "../data/codingLangList";
 import environmentList from "../data/environmentList"
+import LangBubble from "./parts/LangBubble";
+import EnvironmentBubble from "./parts/EnvironmentBubble";
 
 function Competence() {
 
     const codingLang = codingLangList.map(item => {
         return (
-            <ProjectLangIcon
+            <LangBubble
                 key={item.key}
+                title={item.name}
                 src={item.src}
-                class="lang-icon"
+                skills={item.skills}
             />
         )
     })
 
     const environment = environmentList.map(item => {
         return (
-            <ProjectLangIcon
+            <EnvironmentBubble
                 key={item.key}
+                title={item.name}
                 src={item.src}
-                class="environment-icon"
+                skills={item.skills}
             />
         )
     })

@@ -10,6 +10,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*scrollbar -- start*/
 ::-webkit-scrollbar {
   width: 10px;
@@ -155,11 +159,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 7.5%;
 }
 
 .footer-icon {
-  width: 35%;
+  width: 100%;
 }
 
 .pro, .perso{
@@ -202,6 +206,7 @@ body {
   width: 65%;
   height: 80%;
   cursor: pointer;
+  transition: linear 0.25s;
 }
 
 .index-block-title {
@@ -211,6 +216,10 @@ body {
 
 .index-block-icon {
   width: 30%;
+}
+
+.index-block:hover {
+  border-color: #00BCD4;
 }
 
 .index-block:hover .index-block-icon {
@@ -538,6 +547,38 @@ body {
   border-left: 5px solid #CE1126;
   height: 85%;
   font-size: 1em
+}
+
+.travel-block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.travel-cover-img {
+  width: 15%;
+  border-radius: 1em;
+  transition: linear 0.25s;
+}
+
+.travel-cover-img:hover {
+  opacity: 0.5;
+}
+
+.travel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: justify;
+  width: 60%;
+  height: 100%;
+}
+
+.travel-title {
+  color: #00BCD4;
+  font-size: 1.25em;
 }
 
 

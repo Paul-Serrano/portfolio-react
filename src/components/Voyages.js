@@ -1,5 +1,7 @@
 import BlockNav from "./parts/BlockNav";
 import BlockTitle from "./parts/BlockTitle";
+import travelList from "../data/TravelList";
+import Travel from "./parts/Travel";
 
 function Voyages() {
 
@@ -23,12 +25,22 @@ function Voyages() {
         document.getElementsByClassName("travel")[0].style.display = "none";
     }
 
+    const travel = travelList.map(item => {
+        return(
+            <Travel
+                key={item.key}
+                item={item}
+            />
+        )
+    })
+
     return(
         <div className="travel">
             <BlockTitle
                 title="Voyages"
                 close={closeVoyages}
             />
+            {travel}
             <BlockNav
                 left="A propos"
                 switchl={switchApropos}

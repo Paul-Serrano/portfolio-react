@@ -1,27 +1,18 @@
-import facebookIcon from "../../img/facebook.png"
-import mailIcon from "../../img/gmail.png"
-import twitterIcon from "../../img/twitter.png"
-import linkedinIcon from "../../img/linkedin.png"
-import githubIcon from "../../img/github.png"
+import socialMediaList from "../../data/socialMediaList";
 
 function Footer() {
+
+    const socialMedia = socialMediaList.map(item => {
+        return (
+            <a key={item.key} href={item.link} className="footer-link" target="_blank">
+                <img className="footer-icon" src={item.src} alt={item.alt}/>
+            </a>
+        )
+    })
+
     return(
         <div className="footer">
-            <a href="src/components/index/Footer#" className="footer-link">
-                <img className="footer-icon" src={linkedinIcon} alt="icone"/>
-            </a>
-            <a href="src/components/index/Footer#" className="footer-link">
-                <img className="footer-icon" src={githubIcon} alt="icone"/>
-            </a>
-            <a href="src/components/index/Footer#" className="footer-link">
-                <img className="footer-icon" src={mailIcon} alt="icone"/>
-            </a>
-            <a href="src/components/index/Footer#" className="footer-link">
-                <img className="footer-icon" src={twitterIcon} alt="icone"/>
-            </a>
-            <a href="src/components/index/Footer#" className="footer-link">
-                <img className="footer-icon" src={facebookIcon} alt="icone"/>
-            </a>
+            {socialMedia}
         </div>
     )
 }

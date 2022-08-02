@@ -11,9 +11,7 @@ function Project(props) {
             projectLangs[i] = projectList[i].lang.map(item => {
                 return <ProjectLangIcon
                     key={item.key}
-                    src={item.src}
-                    alt={item.alt}
-                    class="project-icon"
+                    item={item}
                 />
             })
         //}

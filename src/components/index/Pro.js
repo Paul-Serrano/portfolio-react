@@ -5,7 +5,7 @@ import proIcon from "../../img/work.png"
 import acadIcon from "../../img/study.png"
 import React from "react";
 
-function Pro() {
+function Pro(props) {
 
     const [openedBlock, setOpenedBlock] = React.useState()
 

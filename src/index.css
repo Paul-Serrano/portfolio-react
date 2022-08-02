@@ -29,6 +29,21 @@ img {
 
 /*scrollbar -- end*/
 
+.light-mode {
+  background-color: whitesmoke;
+  color: #191919;
+}
+
+.light-mode .lang-bubble {
+  background-color: #191919;
+  color: lightgrey;
+}
+
+.light-mode .env-bubble {
+  background-color: #191919;
+  color: lightgrey;
+}
+
 body {
   background-color: #191919;
   color: #d3d3d3;
@@ -109,20 +124,22 @@ body {
 }
 
 .settings-btn-block {
-  width: 10%;
+  width: 12.5%;
   height: 20px;
+  padding: 1%;
   background-color: #191919;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 }
 
 .settings-btn-bubble {
-  width: 50%;
-  background-color: white;
-  height: 90%;
-  border-radius: 0.5rem;
+  width: 35%;
+  background-color: whitesmoke;
+  height: 75%;
+  border-radius: 1rem;
 }
 
 /*Settings -- end*/
@@ -187,6 +204,7 @@ body {
   align-items: center;
   width: 65%;
   height: 80%;
+  cursor: pointer;
 }
 
 .index-block-title {

@@ -13,9 +13,7 @@ function Competence() {
         return (
             <LangBubble
                 key={item.key}
-                title={item.name}
-                src={item.src}
-                skills={item.skills}
+                item={item}
             />
         )
     })
@@ -24,9 +22,7 @@ function Competence() {
         return (
             <EnvironmentBubble
                 key={item.key}
-                title={item.name}
-                src={item.src}
-                skills={item.skills}
+                item={item}
             />
         )
     })

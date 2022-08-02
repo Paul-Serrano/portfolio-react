@@ -17,11 +17,11 @@ function LangBubble(props) {
 
     return (
         <div className="lang-block">
-            <img className="lang-icon" src={props.src} alt={props.alt}/>
+            <img className="lang-icon" src={props.item.src} alt={props.item.alt}/>
             <div className="lang-bubble">
-                <p className="lang-bubble-title">{props.title}</p>
+                <p className="lang-bubble-title">{props.item.name}</p>
                 <div className="lang-bubble-content">
-                    <p>{props.skills}</p>
+                    <p>{props.item.skills}</p>
                 </div>
             </div>
         </div>

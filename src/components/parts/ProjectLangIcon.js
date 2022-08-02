@@ -1,6 +1,9 @@
+import codingLangList from "../../data/codingLangList";
+import projectList from "../../data/projectList";
+
 function ProjectLangIcon(props) {
     return (
-        <img className={props.class} src={props.src} alt={props.alt}/>
+        <img className="project-icon" src={props.item.src} alt={props.item.alt}/>
     )
 }
 

@@ -3,9 +3,8 @@ import moon from "../../img/moon.png"
 import french from "../../img/france.png"
 import english from "../../img/uk.png"
 import back from "../../img/back-arrow.png"
-import OptionButton from "./OptionButton";
 
-function Option() {
+function Option(props) {
 
     function closeOption() {
         document.getElementsByClassName("settings")[0].style.display = "none"
@@ -19,12 +18,16 @@ function Option() {
             </button>
             <div className="settings-block settings-border-block">
                 <img className="settings-icon" src={moon} alt="Icône lune"/>
-                <OptionButton/>
+                <div className="settings-btn-block" onClick={props.toggleDarkMode}>
+                    <div className="settings-btn-bubble"></div>
+                </div>
                 <img className="settings-icon" src={sun} alt="Icône soleil"/>
             </div>
             <div className="settings-block">
                 <img className="settings-icon" src={french} alt="Icône français"/>
-                <OptionButton/>
+                <div className="settings-btn-block">
+                    <div className="settings-btn-bubble"></div>
+                </div>
                 <img className="settings-icon" src={english} alt="Icône anglais"/>
             </div>
         </div>
@@ -32,3 +35,4 @@ function Option() {
 }
 
 export default Option;
+

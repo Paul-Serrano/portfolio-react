@@ -8,7 +8,12 @@ import Option from "./components/parts/Option";
 import Realisation from "./components/Realisation";
 import Competence from "./components/Competences";
 import ParcoursAcad from "./components/ParcoursAcad";
+import IconTest from "./components/parts/IconTest";
 import React from "react";
+import Apropos from "./components/Apropos";
+import Voyages from "./components/Voyages";
+import Loisirs from "./components/Loisirs";
+import Bonus from "./components/Bonus";
 
 
 function App() {
@@ -27,7 +32,7 @@ function App() {
             <div className="left-side">
                 <Nav/>
                 <Option toggleDarkMode={toggleDarkMode}/>
-                <Pro lightMode={lightMode}/>
+                <Pro/>
                 <Realisation/>
                 <Competence/>
                 <ParcoursPro/>
@@ -35,6 +40,10 @@ function App() {
             </div>
             <div className="right-side">
                 <Perso/>
+                <Apropos/>
+                <Voyages/>
+                <Loisirs/>
+                <Bonus/>
                 <Footer/>
             </div>
         </main>

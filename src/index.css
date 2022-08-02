@@ -626,6 +626,7 @@ body {
 .about-img {
   width: 20%;
   border-radius: 50%;
+  border: 5px solid #CE1126;
 }
 
 .about-intro-content {

@@ -89,6 +89,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: linear 0.25s
+}
+
+.nav-button:hover {
+  transform: scale(1.25);
 }
 
 /*Settings -- start*/
@@ -121,6 +126,11 @@ body {
   align-items: center;
   background-color: rgba(0,0,0,0);
   border: none;
+  transition: linear 0.25s
+}
+
+.settings-return-btn:hover {
+  transform: scale(1.25)
 }
 
 .settings-icon {
@@ -141,7 +151,7 @@ body {
 
 .settings-btn-bubble {
   width: 35%;
-  background-color: whitesmoke;
+  background-color: #00BCD4;
   height: 75%;
   border-radius: 1rem;
 }
@@ -164,6 +174,11 @@ body {
 
 .footer-icon {
   width: 100%;
+  transition: linear 0.25s
+}
+
+.footer-icon:hover {
+  transform: scale(1.25);
 }
 
 .pro, .perso{
@@ -240,6 +255,16 @@ body {
   }
 }
 
+.about, .travel, .hobby, .bonus {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #CE1126;
+  height: 85%;
+  font-size: 1em
+}
+
 /*Block-title -- start*/
 
 .block-title {
@@ -265,6 +290,11 @@ body {
   left: 5%;
   top: -15%;
   width: 7.5%;
+  transition: linear 0.25s
+}
+
+.block-title-return-btn:hover {
+  transform: scale(1.25)
 }
 
 /*Block-title -- end*/
@@ -539,15 +569,7 @@ body {
 
 /*Parcours Professionnel -- end*/
 
-.about, .travel, .hobby, .bonus {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-left: 5px solid #CE1126;
-  height: 85%;
-  font-size: 1em
-}
+/*Voyages -- start*/
 
 .travel-block {
   display: flex;
@@ -580,6 +602,67 @@ body {
   color: #00BCD4;
   font-size: 1.25em;
 }
+
+/*Voyages -- end*/
+
+/*A propos -- start*/
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 75%;
+}
+
+.about-intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.about-img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.about-intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 0 0 5%;
+}
+
+.about-title {
+  font-size: 1.25em;
+  color: #00BCD4;
+}
+
+.about-txt {
+  text-align: justify;
+}
+
+/*A propos -- end*/
+
+
 
 
 

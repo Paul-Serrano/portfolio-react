@@ -1,5 +1,7 @@
 import BlockNav from "./parts/BlockNav";
 import BlockTitle from "./parts/BlockTitle";
+import aboutList from "../data/aboutList";
+import profilPicture from "../img/photo-paul.jpg"
 
 function Apropos() {
 
@@ -23,12 +25,33 @@ function Apropos() {
         document.getElementsByClassName("about")[0].style.display = "none";
     }
 
+    const about = aboutList.map(item => {
+        return(
+            <div key={item.key} className="about-content">
+                <p className="about-title">{item.title}</p>
+                <p className="about-txt">{item.description}</p>
+            </div>
+        )
+    })
+
     return(
         <div className="about">
             <BlockTitle
                 title="A propos"
                 close={closeApropos}
             />
+            <div className="about-container">
+                <div className="about-intro">
+                    <img className="about-img" src={profilPicture} alt="Paul Serrano"/>
+                    <div className="about-intro-content">
+                        <p className="about-birth">né le 30/10/1992 à Pau (64000)</p>
+                        <p className="about-tel">téléphone : 0624232427</p>
+                    </div>
+                </div>
+                <div className="about-block">
+                    {about}
+                </div>
+            </div>
             <BlockNav
                 left="Voyages"
                 switchl={switchVoyages}

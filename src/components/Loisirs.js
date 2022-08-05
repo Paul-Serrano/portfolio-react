@@ -24,7 +24,7 @@ function Loisirs() {
     }
 
     return(
-        <div className="hobby">
+        <div className="hobby perso-block">
             <BlockTitle
                 title="Loisirs"
                 close={closeLoisirs}

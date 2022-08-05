@@ -53,7 +53,7 @@ function Competence() {
     }
 
     return(
-        <div className="skills comp">
+        <div className="skills pro-block">
             <BlockTitle
                 title="Compétences"
                 close={closeComp}

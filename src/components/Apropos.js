@@ -35,7 +35,7 @@ function Apropos() {
     })
 
     return(
-        <div className="about">
+        <div className="about perso-block">
             <BlockTitle
                 title="A propos"
                 close={closeApropos}

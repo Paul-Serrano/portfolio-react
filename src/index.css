@@ -500,7 +500,7 @@ body {
   background-color: whitesmoke;
   color: #191919;
   border: 5px solid #CE1126;
-  top: -100%;
+  top: -125%;
   height: 50%;
   justify-content: space-evenly;
   align-items: center;
@@ -604,6 +604,14 @@ body {
 
 /*Voyages -- start*/
 
+.travel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+}
+
 .travel-block {
   display: flex;
   justify-content: space-evenly;
@@ -612,7 +620,7 @@ body {
 }
 
 .travel-cover-img {
-  width: 15%;
+  width: 12.5%;
   border-radius: 1em;
   transition: linear 0.25s;
 }
@@ -697,6 +705,300 @@ body {
 /*A propos -- end*/
 
 
+
+/* Phone wide responsive design -- start*/
+
+@media(max-width: 850px) {
+  .nav{
+    font-size: 1.5em;
+  }
+
+  .settings-btn-block {
+    width: 25%;
+  }
+
+  .pro-title, .perso-title {
+    font-size: 1em;
+  }
+
+  .index-block {
+    width: 75%;
+  }
+
+  .index-block-title {
+    font-size: 1em;
+  }
+
+  .block-title {
+    margin-top: 2.5%;
+    font-size: 1.25em;
+  }
+
+  .block-nav-btn {
+    font-size: 0.75em;
+  }
+
+  .block-nav-txt {
+    width: 75%;
+  }
+
+  .project-txt {
+    font-size: 1em;
+  }
+
+  .block-nav {
+    height: 10%;
+  }
+
+  .skills-title {
+    font-size: 1em;
+  }
+
+  .lang-bubble {
+    width: 75%;
+    height: auto;
+    padding: 5%;
+    right: 7.5%;
+  }
+
+  .lang-bubble-title {
+    font-size: 1em;
+  }
+
+  .lang-bubble-content {
+    font-size: 0.75em;
+  }
+
+  .env-bubble {
+    width: 75%;
+    height: auto;
+    padding: 5%;
+    right: 7.5%;
+  }
+
+  .env-bubble-title {
+    font-size: 1em;
+  }
+
+  .env-bubble-content {
+    font-size: 0.75em;
+  }
+
+  .work-title-block {
+    font-size: 1em;
+  }
+
+  .work {
+    margin: 1.5% 0 0;
+  }
+
+  .work p {
+    font-size: 0.75em;
+  }
+
+  .work-info {
+    font-size: 0.75em;
+  }
+
+  .work-content {
+    padding: 25% 0 0;
+    margin: 5% 0;
+  }
+
+  .study {
+    font-size: 0.75em;
+  }
+
+  .study-title {
+    font-size: 1em;
+  }
+
+  .about-intro-content {
+    font-size: 1em;
+  }
+
+  .about-title {
+    font-size: 1em;
+  }
+
+  .about-txt {
+    font-size: 0.5em;
+  }
+
+  .travel-title {
+    font-size: 1em;
+  }
+
+  .travel-txt {
+    font-size: 0.5em;
+  }
+
+}
+
+/* Phone wide responsive design -- end*/
+
+/* Phone portrait responsive design -- start*/
+
+@media(max-width: 450px) {
+  .main {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+  }
+
+  .nav, .settings, .footer {
+    padding: 5% 0;
+  }
+
+  .footer-link {
+    width: 10%;
+  }
+
+  .pro {
+    border-right: none;
+    border-bottom: 5px solid #CE1126;
+    height: 75vh
+  }
+
+  .perso {
+    border-left: none;
+    height: 75vh;
+  }
+
+  .pro-title, .perso-title {
+    font-size: 1.5em;
+    margin: 5% 0 0;
+  }
+
+  .pro-content, .perso-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 5% 0;
+  }
+
+
+  .index-block {
+    flex-direction: row;
+    margin-bottom: 5%;
+    position: relative;
+  }
+
+  .index-block:nth-child(1), .index-block:nth-child(3) {
+    right: 5%;
+  }
+
+  .index-block:nth-child(2), .index-block:nth-child(4) {
+    right: -5%;
+  }
+
+  .index-block-icon {
+    width: 15%;
+    padding: 5%;
+  }
+
+  .pro-block {
+    height: 75vh;
+    border-bottom: 5px solid #CE1126;
+    border-right: none;
+  }
+
+  .block-title {
+    font-size: 1.5em;
+    margin: 5% 0 0;
+  }
+
+  .block-title-return-btn {
+    top: 0;
+  }
+
+  .project-txt {
+    font-size: 1.25em;
+  }
+
+  .project-icon {
+    width: 15%;
+  }
+
+  .skills-title {
+    font-size: 1.25em;
+  }
+
+  .lang-block {
+    width: 75%;
+  }
+
+  .lang-bubble{
+    right: 5%;
+  }
+
+  .env-bubble {
+    top: -50%;
+    right: 5%;
+  }
+
+  .env-block {
+    width: 15%;
+  }
+
+  .work-content {
+    padding: 0;
+    margin: 0;
+    height: 75%;
+  }
+
+  .study {
+    font-size: 1em
+  }
+
+  .study-title {
+    font-size: 1.25em;
+  }
+
+  .perso-block {
+    height: 75vh;
+    border-left: none;
+  }
+
+  .about-intro {
+    flex-direction: column;
+  }
+
+  .about-intro-content {
+    font-size: 1.25em;
+    margin-top: 5%;
+  }
+
+  .about-title {
+    font-size: 1.25em;
+  }
+
+  .about-txt {
+    font-size: 0.75em;
+  }
+
+  .about-img {
+    width: 35%;
+  }
+
+  .travel-cover-img {
+    width: 20%;
+  }
+
+  .travel-title {
+    font-size: 1.25em;
+  }
+
+  .travel-txt {
+    font-size: 0.75em;
+  }
+}
+
+/* Phone portrait responsive design -- end*/
 
 
 

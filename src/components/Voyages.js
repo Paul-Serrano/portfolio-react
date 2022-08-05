@@ -35,12 +35,14 @@ function Voyages() {
     })
 
     return(
-        <div className="travel">
+        <div className="travel perso-block">
             <BlockTitle
                 title="Voyages"
                 close={closeVoyages}
             />
-            {travel}
+            <div className="travel-container">
+                {travel}
+            </div>
             <BlockNav
                 left="A propos"
                 switchl={switchApropos}

@@ -1,31 +1,36 @@
 import BlockTitle from "./parts/BlockTitle";
 import BlockNav from "./parts/BlockNav";
-import ProjectLangIcon from "./parts/ProjectLangIcon";
-import projectList from "../data/projectList";
 import codingLangList from "../data/codingLangList";
 import environmentList from "../data/environmentList"
 import LangBubble from "./parts/LangBubble";
 import EnvironmentBubble from "./parts/EnvironmentBubble";
+import {useMemo} from "react";
 
 function Competence() {
 
-    const codingLang = codingLangList.map(item => {
-        return (
+    const codingLangs = useMemo(() => {
+        return codingLangList.map((item) => (
             <LangBubble
                 key={item.key}
-                item={item}
+                src={item.src}
+                alt={item.alt}
+                name={item.name}
+                skills={item.skills}
             />
-        )
-    })
+        ));
+    }, []);
 
-    const environment = environmentList.map(item => {
-        return (
+    const environment = useMemo(() => {
+        return environmentList.map((item) => (
             <EnvironmentBubble
                 key={item.key}
-                item={item}
+                src={item.src}
+                alt={item.alt}
+                name={item.name}
+                skills={item.skills}
             />
-        )
-    })
+        ));
+    }, []);
 
     function closeComp() {
         document.getElementsByClassName("pro")[0].style.display = "flex";
@@ -56,7 +61,7 @@ function Competence() {
             <div className="languages-block">
                 <p className="skills-title">Langages de développement</p>
                 <div className="languages">
-                    {codingLang}
+                    {codingLangs}
                 </div>
             </div>
             <div className="environment-block">

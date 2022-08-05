@@ -15,14 +15,36 @@ const codingLangList = [
         name: "CSS",
         src: cssIcon,
         alt: "Icône CSS",
-        skills: ["flexbox, grid, animations, responsive design"]
+        skills: [
+            {
+                key: 1,
+                skill: "flexbox"
+            },
+            {
+                key: 2,
+                skill: "grid"
+            },
+            {
+                key: 3,
+                skill: "animations"
+            },
+            {
+                key: 4,
+                skill: "responsive design"
+            }
+            ]
     },
     {
         key: 2,
         name: "HTML",
         src: htmlIcon,
         alt: "Icône HTML",
-        skills: ["balises"]
+        skills: [
+            {
+                key: 1,
+                skill: "balises"
+            }
+        ]
     },
     {
         key: 3,

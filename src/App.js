@@ -8,7 +8,6 @@ import Option from "./components/parts/Option";
 import Realisation from "./components/Realisation";
 import Competence from "./components/Competences";
 import ParcoursAcad from "./components/ParcoursAcad";
-import IconTest from "./components/parts/IconTest";
 import React from "react";
 import Apropos from "./components/Apropos";
 import Voyages from "./components/Voyages";

@@ -1,28 +1,23 @@
-import codingLangList from "../../data/codingLangList";
+import {useMemo} from "react";
 
-function LangBubble(props) {
+function LangBubble({src, alt, name, skills}) {
 
-    for(let i = 0; i < codingLangList; i++) {
-        const content = codingLangList[i].skills.map(item => {
-            return (
-                <div className="lang-bubble-content">
-                    <p>{item.skills}</p>
-                </div>
-            )
-            console.log(content)
-        })
-    }
+    const skillContent = useMemo(() => {
+        return skills.map((item) => (
+                <li className="lang-bubble-txt" key={item.key}>{item.skill}</li>
+        ));
+    }, [skills]);
 
 
 
     return (
         <div className="lang-block">
-            <img className="lang-icon" src={props.item.src} alt={props.item.alt}/>
+            <img className="lang-icon" src={src} alt={alt}/>
             <div className="lang-bubble">
-                <p className="lang-bubble-title">{props.item.name}</p>
-                <div className="lang-bubble-content">
-                    <p>{props.item.skills}</p>
-                </div>
+                <p className="lang-bubble-title">{name}</p>
+                <ul className="lang-bubble-content">
+                    {skillContent}
+                </ul>
             </div>
         </div>
 

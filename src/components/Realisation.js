@@ -2,16 +2,9 @@ import Project from "./parts/Project";
 import BlockTitle from "./parts/BlockTitle";
 import projectList from "../data/projectList";
 import BlockNav from "./parts/BlockNav";
+import {useMemo} from "react";
 
 function Realisation() {
-
-    const projects = projectList.map(item => {
-        return <Project
-            key={item.key}
-            title={item.name}
-            link={item.link}
-        />
-    })
 
     function closeReal() {
         document.getElementsByClassName("pro")[0].style.display = "flex";
@@ -32,6 +25,17 @@ function Realisation() {
         document.getElementsByClassName("parcours-acad")[0].style.display = "flex";
         document.getElementsByClassName("realisations")[0].style.display = "none";
     }
+
+    const projects = useMemo(() => {
+        return projectList.map((item) => (
+            <Project
+                key={item.key}
+                title={item.name}
+                link={item.link}
+                langs={item.lang}
+            />
+        ));
+    }, []);
 
     return (
         <div className="realisations pro-block">

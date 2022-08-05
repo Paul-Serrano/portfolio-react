@@ -1,30 +1,21 @@
-//import codingLangList from "../../data/codingLangList";
-import projectList from "../../data/projectList";
-import ProjectLangIcon from "./ProjectLangIcon";
+import {useMemo} from "react";
 
-function Project(props) {
+function Project({title, link, langs}) {
 
-    let projectLang = [];
-
-    for(let i = 0; i < projectList.length; i++) {
-        //for(let j = 0; j < projectList[i].lang.length; j++) {
-            projectLang[i] = projectList[i].lang.map(item => {
-                return <ProjectLangIcon
-                    key={item.key}
-                    item={item}
-                />
-            })
-        //}
-    }
+    const projectLang = useMemo(() => {
+        return langs.map((lang) => (
+            <img className="project-icon" key={lang.key} src={lang.src} alt={lang.alt} />
+        ));
+    }, [langs]);
 
     return (
         <div className="project">
-            <a href={props.link} className="project-txt" target="_blank">{props.title}</a>
-            <div className="project-content">
-                {projectLang}
-            </div>
+            <a href={link} className="project-txt" target="_blank">
+                {title}
+            </a>
+            <div className="project-content">{projectLang}</div>
         </div>
-    )
+    );
 }
 
 

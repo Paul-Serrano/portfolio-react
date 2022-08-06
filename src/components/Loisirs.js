@@ -3,24 +3,44 @@ import BlockTitle from "./parts/BlockTitle";
 
 function Loisirs() {
 
+    function delay(a, b) {
+        setTimeout(function fadeOn() {
+            a.style.display = "flex";
+            b.style.display = "none";
+            a.style.animation = "fadeon 0.5s forwards linear";
+        }, 500);
+    }
+
+    function fadeAway(a) {
+        a.style.animation = "fadeaway 0.5s forwards linear";
+    }
+
     function closeLoisirs() {
-        document.getElementsByClassName("perso")[0].style.display = "flex";
-        document.getElementsByClassName("hobby")[0].style.display = "none";
+        const perso = document.getElementsByClassName("perso")[0];
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(perso, loisirs);
     }
 
     function switchApropos() {
-        document.getElementsByClassName("about")[0].style.display = "flex";
-        document.getElementsByClassName("hobby")[0].style.display = "none";
+        const about = document.getElementsByClassName("about")[0];
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(about, loisirs);
     }
 
     function switchVoyages() {
-        document.getElementsByClassName("travel")[0].style.display = "flex";
-        document.getElementsByClassName("hobby")[0].style.display = "none";
+        const voyages = document.getElementsByClassName("travel")[0];
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(voyages, loisirs);
     }
 
     function switchBonus() {
-        document.getElementsByClassName("bonus")[0].style.display = "flex";
-        document.getElementsByClassName("hobby")[0].style.display = "none";
+        const bonus = document.getElementsByClassName("bonus")[0];
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(bonus, loisirs);
     }
 
     return(

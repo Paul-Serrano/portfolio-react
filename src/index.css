@@ -345,7 +345,8 @@ body {
   align-items: center;
   border-right: 5px solid #CE1126;
   height: 85%;
-  font-size: 1em
+  font-size: 1em;
+  opacity: 0;
 }
 
 .realisation-content {
@@ -999,6 +1000,25 @@ body {
 }
 
 /* Phone portrait responsive design -- end*/
+
+@keyframes fadeaway {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 

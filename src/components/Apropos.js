@@ -5,24 +5,44 @@ import profilPicture from "../img/photo-paul.jpg"
 
 function Apropos() {
 
+    function delay(a, b) {
+        setTimeout(function fadeOn() {
+            a.style.display = "flex";
+            b.style.display = "none";
+            a.style.animation = "fadeon 0.5s forwards linear";
+        }, 500);
+    }
+
+    function fadeAway(a) {
+        a.style.animation = "fadeaway 0.5s forwards linear";
+    }
+
     function closeApropos() {
-        document.getElementsByClassName("perso")[0].style.display = "flex";
-        document.getElementsByClassName("about")[0].style.display = "none";
+        const perso = document.getElementsByClassName("perso")[0];
+        const about = document.getElementsByClassName("about")[0];
+        fadeAway(about);
+        delay(perso, about);
     }
 
     function switchVoyages() {
-        document.getElementsByClassName("travel")[0].style.display = "flex";
-        document.getElementsByClassName("about")[0].style.display = "none";
+        const voyages = document.getElementsByClassName("travel")[0];
+        const about = document.getElementsByClassName("about")[0];
+        fadeAway(about);
+        delay(voyages, about);
     }
 
     function switchLoisirs() {
-        document.getElementsByClassName("hobby")[0].style.display = "flex";
-        document.getElementsByClassName("about")[0].style.display = "none";
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        const about = document.getElementsByClassName("about")[0];
+        fadeAway(about);
+        delay(loisirs, about);
     }
 
     function switchBonus() {
-        document.getElementsByClassName("bonus")[0].style.display = "flex";
-        document.getElementsByClassName("about")[0].style.display = "none";
+        const bonus = document.getElementsByClassName("bonus")[0];
+        const about = document.getElementsByClassName("about")[0];
+        fadeAway(about);
+        delay(bonus, about);
     }
 
     const about = aboutList.map(item => {

@@ -6,24 +6,44 @@ import bonusIcon from "../../img/bonus.png"
 
 function Perso() {
 
-    function openApropos() {
-        document.getElementsByClassName("perso")[0].style.display = "none";
-        document.getElementsByClassName("about")[0].style.display = "flex";
+    function delay(a, b) {
+        setTimeout(function fadeOn() {
+            a.style.display = "flex";
+            b.style.display = "none";
+            a.style.animation = "fadeon 0.5s forwards linear";
+        }, 500);
     }
 
-    function openVoayges() {
-        document.getElementsByClassName("perso")[0].style.display = "none";
-        document.getElementsByClassName("travel")[0].style.display = "flex";
+    function fadeAway(a) {
+        a.style.animation = "fadeaway 0.5s forwards linear";
+    }
+
+    function openApropos() {
+        const perso = document.getElementsByClassName("perso")[0];
+        const about = document.getElementsByClassName("about")[0];
+        fadeAway(perso);
+        delay(about, perso);
+    }
+
+    function openVoyages() {
+        const perso = document.getElementsByClassName("perso")[0];
+        const voyage = document.getElementsByClassName("travel")[0];
+        fadeAway(perso);
+        delay(voyage, perso);
     }
 
     function openLoisirs() {
-        document.getElementsByClassName("perso")[0].style.display = "none";
-        document.getElementsByClassName("hobby")[0].style.display = "flex";
+        const perso = document.getElementsByClassName("perso")[0];
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(perso);
+        delay(loisirs, perso);
     }
 
     function openBonus() {
-        document.getElementsByClassName("perso")[0].style.display = "none";
-        document.getElementsByClassName("bonus")[0].style.display = "flex";
+        const perso = document.getElementsByClassName("perso")[0];
+        const bonus = document.getElementsByClassName("bonus")[0];
+        fadeAway(perso);
+        delay(bonus, perso);
     }
 
     return (
@@ -40,7 +60,7 @@ function Perso() {
                     name="Voyages"
                     src={voyageIcon}
                     alt="icône voyages"
-                    open={openVoayges}
+                    open={openVoyages}
                 />
                 <Block
                     name="Loisirs"

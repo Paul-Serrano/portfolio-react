@@ -15,24 +15,44 @@ function ParcoursAcad() {
         />
     })
 
+    function delay(a, b) {
+        setTimeout(function fadeOn() {
+            a.style.display = "flex";
+            b.style.display = "none";
+            a.style.animation = "fadeon 0.5s forwards linear";
+        }, 500);
+    }
+
+    function fadeAway(a) {
+        a.style.animation = "fadeaway 0.5s forwards linear";
+    }
+
     function closeAcad() {
-        document.getElementsByClassName("pro")[0].style.display = "flex";
-        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+        const pro = document.getElementsByClassName("pro")[0];
+        const parcoursAcad = document.getElementsByClassName("parcours-acad")[0];
+        fadeAway(parcoursAcad)
+        delay(pro, parcoursAcad);
     }
 
     function switchComp() {
-        document.getElementsByClassName("skills")[0].style.display = "flex";
-        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+        const comp = document.getElementsByClassName("skills")[0]
+        const parcoursAcad = document.getElementsByClassName("parcours-acad")[0];
+        fadeAway(parcoursAcad);
+        delay(comp, parcoursAcad)
     }
 
     function switchParcoursPro() {
-        document.getElementsByClassName("parcours-pro")[0].style.display = "flex";
-        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+        const parcoursPro = document.getElementsByClassName("parcours-pro")[0]
+        const parcoursAcad = document.getElementsByClassName("parcours-acad")[0];
+        fadeAway(parcoursAcad);
+        delay(parcoursPro, parcoursAcad)
     }
 
     function switchReal() {
-        document.getElementsByClassName("realisations")[0].style.display = "flex";
-        document.getElementsByClassName("parcours-acad")[0].style.display = "none";
+        const real = document.getElementsByClassName("realisations")[0]
+        const parcoursAcad = document.getElementsByClassName("parcours-acad")[0];
+        fadeAway(parcoursAcad);
+        delay(real, parcoursAcad)
     }
 
     return(

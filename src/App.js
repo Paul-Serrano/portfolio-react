@@ -8,7 +8,7 @@ import Option from "./components/parts/Option";
 import Realisation from "./components/Realisation";
 import Competence from "./components/Competences";
 import ParcoursAcad from "./components/ParcoursAcad";
-import React from "react";
+import {useState} from "react";
 import Apropos from "./components/Apropos";
 import Voyages from "./components/Voyages";
 import Loisirs from "./components/Loisirs";
@@ -17,7 +17,7 @@ import Bonus from "./components/Bonus";
 
 function App() {
 
-    const [lightMode, setLightMode] = React.useState(false)
+    const [lightMode, setLightMode] = useState(false)
 
     function toggleDarkMode() {
         setLightMode(prevLightMode => !prevLightMode)

@@ -8,6 +8,7 @@
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 button {
@@ -40,11 +41,17 @@ button {
 
 .light-mode .lang-bubble {
   background-color: #191919;
+}
+
+.light-mode .lang-bubble-txt {
   color: lightgrey;
 }
 
 .light-mode .env-bubble {
   background-color: #191919;
+}
+
+.light-mode .env-bubble-txt {
   color: lightgrey;
 }
 
@@ -610,7 +617,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 80%;
+  height: 75%;
 }
 
 .travel-block {
@@ -643,6 +650,66 @@ body {
 .travel-title {
   color: #00BCD4;
   font-size: 1.25em;
+}
+
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-container {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.gallery-icon {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  transition: 0.25s linear;
+  width: 25%;
+}
+
+.gallery-icon:hover {
+  transform: scale(1.25);
+}
+
+.close-gallery {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 5%;
+  cursor: pointer;
+  transition: 0.25s linear;
+}
+
+.close-gallery:hover {
+  transform: scale(1.25);
+}
+
+.photo-block {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.photo-title {
+  font-size: 1.5em;
+  color: #F3EA2A;
+  font-weight: bold;
 }
 
 /*Voyages -- end*/
@@ -834,6 +901,14 @@ body {
     font-size: 0.5em;
   }
 
+  .photo-block {
+    height: 65%;
+  }
+
+  .photo {
+    height: 100%;
+  }
+
 }
 
 /* Phone wide responsive design -- end*/
@@ -851,7 +926,7 @@ body {
   }
 
   .nav, .settings, .footer {
-    padding: 5% 0;
+    height: 7.5vh;
   }
 
   .footer-link {
@@ -997,7 +1072,40 @@ body {
   .travel-txt {
     font-size: 0.75em;
   }
+
+  .gallery-container {
+    grid-template-rows: 6fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+  }
+
+  .prev-icon {
+    grid-area: 2 / 1 / 2 / 3;
+    align-self: center;
+    justify-self: center;
+    width: 20%;
+  }
+
+  .next-icon {
+    grid-area: 2 / 2 / 2 / 4;
+    align-self: center;
+    justify-self: center;
+    width: 20%;
+  }
+
+  .photo-block {
+    grid-area: 1 / 1 / 2 / 4;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .close-gallery {
+    width: 15%;
+    top: 2.5%;
+  }
 }
+
+
 
 /* Phone portrait responsive design -- end*/
 

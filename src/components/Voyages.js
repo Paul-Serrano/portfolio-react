@@ -45,11 +45,13 @@ function Voyages() {
         delay(bonus, voyages);
     }
 
+
     const travel = travelList.map(item => {
         return(
             <Travel
                 key={item.key}
                 item={item}
+                open={item.open}
             />
         )
     })

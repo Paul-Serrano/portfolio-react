@@ -1,7 +1,7 @@
-import BlockNav from "./parts/BlockNav";
-import BlockTitle from "./parts/BlockTitle";
+import BlockNav from "../index/parts/BlockNav";
+import BlockTitle from "../index/parts/BlockTitle";
 
-function Bonus() {
+function Loisirs() {
 
     function delay(a, b) {
         setTimeout(function fadeOn() {
@@ -15,50 +15,50 @@ function Bonus() {
         a.style.animation = "fadeaway 0.5s forwards linear";
     }
 
-    function closeBonus() {
+    function closeLoisirs() {
         const perso = document.getElementsByClassName("perso")[0];
-        const bonus = document.getElementsByClassName("bonus")[0];
-        fadeAway(bonus);
-        delay(perso, bonus);
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(perso, loisirs);
     }
 
     function switchApropos() {
         const about = document.getElementsByClassName("about")[0];
-        const bonus = document.getElementsByClassName("bonus")[0];
-        fadeAway(bonus);
-        delay(about, bonus);
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(about, loisirs);
     }
 
     function switchVoyages() {
         const voyages = document.getElementsByClassName("travel")[0];
-        const bonus = document.getElementsByClassName("bonus")[0];
-        fadeAway(bonus);
-        delay(voyages, bonus);
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(voyages, loisirs);
     }
 
-    function switchLoisirs() {
-        const loisirs = document.getElementsByClassName("hobby")[0];
+    function switchBonus() {
         const bonus = document.getElementsByClassName("bonus")[0];
-        fadeAway(bonus);
-        delay(loisirs, bonus);
+        const loisirs = document.getElementsByClassName("hobby")[0];
+        fadeAway(loisirs);
+        delay(bonus, loisirs);
     }
 
     return(
-        <div className="bonus perso-block">
+        <div className="hobby perso-block">
             <BlockTitle
-                title="Bonus"
-                close={closeBonus}
+                title="Loisirs"
+                close={closeLoisirs}
             />
             <BlockNav
                 left="A propos"
                 switchl={switchApropos}
                 center="Voyages"
                 switchc={switchVoyages}
-                right="Loisirs"
-                switchr={switchLoisirs}
+                right="Bonus"
+                switchr={switchBonus}
             />
         </div>
     )
 }
 
-export default Bonus
+export default Loisirs

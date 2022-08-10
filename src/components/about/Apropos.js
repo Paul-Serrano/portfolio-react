@@ -1,7 +1,7 @@
-import BlockNav from "./parts/BlockNav";
-import BlockTitle from "./parts/BlockTitle";
-import aboutList from "../data/aboutList";
-import profilPicture from "../img/photo-paul.jpg"
+import BlockNav from "../index/parts/BlockNav";
+import BlockTitle from "../index/parts/BlockTitle";
+import aboutList from "../../data/aboutList";
+import profilPicture from "../../img/photo-paul.jpg"
 
 function Apropos() {
 

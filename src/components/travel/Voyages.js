@@ -1,7 +1,7 @@
-import BlockNav from "./parts/BlockNav";
-import BlockTitle from "./parts/BlockTitle";
-import travelList from "../data/TravelList";
-import Travel from "./parts/Travel";
+import BlockNav from "../index/parts/BlockNav";
+import BlockTitle from "../index/parts/BlockTitle";
+import travelList from "../../data/TravelList";
+import Travel from "./Travel";
 
 function Voyages() {
 

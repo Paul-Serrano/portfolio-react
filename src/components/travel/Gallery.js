@@ -12,7 +12,6 @@ function Gallery({photos, close}) {
                 <p className="photo-title">{photo.key}</p>
                 <img className="photo" src={photo.src} alt={photo.alt} />
             </div>
-
         ));
     }, [photos]);
 

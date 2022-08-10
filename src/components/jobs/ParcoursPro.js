@@ -1,7 +1,7 @@
-import BlockTitle from "./parts/BlockTitle";
-import BlockNav from "./parts/BlockNav";
-import workList from "../data/workList";
-import Work from "./parts/Work";
+import BlockTitle from "../index/parts/BlockTitle";
+import BlockNav from "../index/parts/BlockNav";
+import workList from "../../data/workList";
+import Work from "./Work";
 
 function ParcoursPro() {
 

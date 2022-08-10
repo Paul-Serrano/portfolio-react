@@ -1,7 +1,7 @@
-import Study from "./parts/Study";
-import studyList from "../data/studyList";
-import BlockTitle from "./parts/BlockTitle";
-import BlockNav from "./parts/BlockNav";
+import Study from "./Study";
+import studyList from "../../data/studyList";
+import BlockTitle from "../index/parts/BlockTitle";
+import BlockNav from "../index/parts/BlockNav";
 
 function ParcoursAcad() {
 

@@ -1,4 +1,4 @@
-import Block from "../../components/parts/Block"
+import Block from "./parts/Block"
 import realisationIcon from "../../img/website.png"
 import competencesIcon from "../../img/skills.png"
 import proIcon from "../../img/work.png"

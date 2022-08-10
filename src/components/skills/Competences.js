@@ -1,9 +1,9 @@
-import BlockTitle from "./parts/BlockTitle";
-import BlockNav from "./parts/BlockNav";
-import codingLangList from "../data/codingLangList";
-import environmentList from "../data/environmentList"
-import LangBubble from "./parts/LangBubble";
-import EnvironmentBubble from "./parts/EnvironmentBubble";
+import BlockTitle from "../index/parts/BlockTitle";
+import BlockNav from "../index/parts/BlockNav";
+import codingLangList from "../../data/codingLangList";
+import environmentList from "../../data/environmentList"
+import LangBubble from "./LangBubble";
+import EnvironmentBubble from "./EnvironmentBubble";
 import {useMemo} from "react";
 
 function Competence() {

@@ -3,16 +3,16 @@ import Nav from "./components/index/Nav"
 import Pro from "./components/index/Pro"
 import Perso from "./components/index/Perso"
 import Footer from "./components/index/Footer"
-import ParcoursPro from "./components/ParcoursPro";
-import Option from "./components/parts/Option";
-import Realisation from "./components/Realisation";
-import Competence from "./components/Competences";
-import ParcoursAcad from "./components/ParcoursAcad";
+import ParcoursPro from "./components/jobs/ParcoursPro";
+import Option from "./components/settings/Option";
+import Realisation from "./components/project/Realisation";
+import Competence from "./components/skills/Competences";
+import ParcoursAcad from "./components/academics/ParcoursAcad";
 import {useState} from "react";
-import Apropos from "./components/Apropos";
-import Voyages from "./components/Voyages";
-import Loisirs from "./components/Loisirs";
-import Bonus from "./components/Bonus";
+import Apropos from "./components/about/Apropos";
+import Voyages from "./components/travel/Voyages";
+import Loisirs from "./components/hobby/Loisirs";
+import Bonus from "./components/bonus/Bonus";
 
 
 function App() {

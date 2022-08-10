@@ -1,4 +1,4 @@
-import Block from "../../components/parts/Block"
+import Block from "./parts/Block"
 import aProposIcon from "../../img/self.png"
 import voyageIcon from "../../img/travel.png"
 import loisirIcon from "../../img/hobby.png"

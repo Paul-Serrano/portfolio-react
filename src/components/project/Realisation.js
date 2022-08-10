@@ -1,7 +1,7 @@
-import Project from "./parts/Project";
-import BlockTitle from "./parts/BlockTitle";
-import projectList from "../data/projectList";
-import BlockNav from "./parts/BlockNav";
+import Project from "./Project";
+import BlockTitle from "../index/parts/BlockTitle";
+import projectList from "../../data/projectList";
+import BlockNav from "../index/parts/BlockNav";
 import {useMemo} from "react";
 
 function Realisation() {

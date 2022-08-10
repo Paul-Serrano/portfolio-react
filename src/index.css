@@ -471,33 +471,34 @@ body {
 .lang-bubble {
   display: none;
   flex-direction: column;
-  width: 50%;
+  width: 35%;
   position: absolute;
   background-color: whitesmoke;
   color: #191919;
   border: 5px solid #CE1126;
-  height: 50%;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 5%;
-  right: 20%;
+  padding: 2.5%;
 }
 
 .lang-bubble-title {
   font-size: 1.25em;
   color: #00BCD4;
+  margin: 0 0 2.5%;
 }
 
 .lang-bubble-txt {
   color: #191919;
-  align-self: center;
-  justify-self: flex-start;
+  white-space: nowrap;
 }
 
 .lang-bubble-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
 }
 
 .env-bubble {

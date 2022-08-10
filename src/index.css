@@ -448,27 +448,21 @@ body {
   justify-self: center;
 }
 
-.lang-icon {
-  width: 100%;
-  align-self: center;
-  justify-self: center;
-  transition: 0.25s linear;
-}
-
 .env-block {
   width: 10%;
   align-self: center;
   justify-self: center;
 }
 
-.env-icon {
+
+.lang-icon, .env-icon {
   width: 100%;
   align-self: center;
   justify-self: center;
   transition: 0.25s linear;
 }
 
-.lang-bubble {
+.lang-bubble, .env-bubble {
   display: none;
   flex-direction: column;
   width: 35%;
@@ -482,18 +476,23 @@ body {
   padding: 2.5%;
 }
 
-.lang-bubble-title {
+.env-bubble {
+  top: -125%;
+  width: 45%;
+}
+
+.lang-bubble-title, .env-bubble-title {
   font-size: 1.25em;
   color: #00BCD4;
   margin: 0 0 2.5%;
 }
 
-.lang-bubble-txt {
+.lang-bubble-txt, .env-bubble-txt {
   color: #191919;
   white-space: nowrap;
 }
 
-.lang-bubble-content {
+.lang-bubble-content, .env-bubble-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -501,47 +500,11 @@ body {
   width: 90%;
 }
 
-.env-bubble {
-  display: none;
-  flex-direction: column;
-  width: 50%;
-  position: absolute;
-  background-color: whitesmoke;
-  color: #191919;
-  border: 5px solid #CE1126;
-  top: -125%;
-  height: 50%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5%;
-  z-index: 1;
-  right: 20%;
-}
-
-.env-bubble-title {
-  font-size: 1.25em;
-  color: #00BCD4;
-}
-
-.env-bubble-txt {
-  color: #191919;
-  align-self: center;
-  justify-self: center;
-}
-
-.lang-icon:hover {
+.lang-icon:hover, .env-icon:hover {
   transform: scale(1.25);
 }
 
-.lang-block:hover .lang-bubble {
-  display: flex;
-}
-
-.env-icon:hover {
-  transform: scale(1.25);
-}
-
-.env-block:hover .env-bubble {
+.lang-block:hover .lang-bubble, .env-block:hover .env-bubble {
   display: flex;
 }
 

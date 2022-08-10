@@ -8,8 +8,6 @@ function LangBubble({src, alt, name, skills}) {
         ));
     }, [skills]);
 
-
-
     return (
         <div className="lang-block">
             <img className="lang-icon" src={src} alt={alt}/>

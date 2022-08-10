@@ -8,14 +8,13 @@ function EnvironmentBubble({src, alt, name, skills}) {
         ));
     }, [skills]);
 
-
         return (
         <div className="env-block">
             <img className="env-icon" src={src} alt={alt}/>
             <div className="env-bubble">
                 <p className="env-bubble-title">{name}</p>
                 <div className="env-bubble-content">
-                    <p>{skillContent}</p>
+                    {skillContent}
                 </div>
             </div>
         </div>

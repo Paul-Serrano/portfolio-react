@@ -1,5 +1,8 @@
 import BlockNav from "../index/parts/BlockNav";
 import BlockTitle from "../index/parts/BlockTitle";
+import {useMemo} from "react";
+import BonusList from "../../data/BonusList";
+import BonusBlock from "./BonusBlock";
 
 function Bonus() {
 
@@ -43,12 +46,25 @@ function Bonus() {
         delay(loisirs, bonus);
     }
 
+    const bonus = useMemo(() => {
+        return BonusList.map((item) => (
+            <BonusBlock
+                key={item.key}
+                title={item.title}
+                bonus={item.bonus}
+            />
+        ));
+    }, []);
+
     return(
         <div className="bonus perso-block">
             <BlockTitle
                 title="Bonus"
                 close={closeBonus}
             />
+            <div className="bonus-container">
+                {bonus}
+            </div>
             <BlockNav
                 left="A propos"
                 switchl={switchApropos}

@@ -232,6 +232,7 @@ body {
 }
 
 .index-block-title {
+  width: 75%;
   font-size: 1.5em;
   color: #00BCD4;
 }

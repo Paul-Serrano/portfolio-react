@@ -42,7 +42,8 @@ const codingLangList = [
         skills: [
             {
                 key: 1,
-                skill: "Balises"
+                skill: "Balises",
+                engSkill: "Tags"
             },
             {
                 key: 2,
@@ -62,7 +63,8 @@ const codingLangList = [
         skills: [
             {
                 key: 1,
-                skill: "Maîtrise du DOM"
+                skill: "Maîtrise du DOM",
+                engSkill: "DOM Manipulation"
             },
             {
                 key: 2,
@@ -70,7 +72,8 @@ const codingLangList = [
             },
             {
                 key: 3,
-                skill: "Méthode map"
+                skill: "Méthode map",
+                engSkill: "Map method"
             },
             {
                 key: 4,
@@ -78,7 +81,8 @@ const codingLangList = [
             },
             {
                 key: 5,
-                skill: "Boucles for / while"
+                skill: "Boucles for / while",
+                engSkill: "for / while Statements"
             }
         ]
     },
@@ -90,11 +94,13 @@ const codingLangList = [
         skills: [
             {
                 key: 1,
-                skill: "Gestion formulaires"
+                skill: "Gestion formulaires",
+                engSkill: "Form Manipulation"
             },
             {
                 key: 2,
-                skill: "Intéractions BDD"
+                skill: "Intéractions BDD",
+                engSkill: "Interact with a database"
             },
             {
                 key: 3,
@@ -102,7 +108,8 @@ const codingLangList = [
             },
             {
                 key: 4,
-                skill: "Boucles for / while"
+                skill: "Boucles for / while",
+                engSkill: "for / while Statements"
             }
         ]
     },
@@ -118,11 +125,13 @@ const codingLangList = [
             },
             {
                 key: 2,
-                skill: "Opérateurs logiques"
+                skill: "Opérateurs logiques",
+                engSkill: "Logical Operators"
             },
             {
                 key: 3,
-                skill: "Lier tables (foreign key)"
+                skill: "Lier tables (foreign key)",
+                engSkill: "Link tables (foreign key)"
             }
         ]
     },
@@ -138,11 +147,13 @@ const codingLangList = [
             },
             {
                 key: 2,
-                skill: "Composants React"
+                skill: "Composants React",
+                engSkill: "React Components"
             },
             {
                 key: 3,
-                skill: "Passer propriétés (props)"
+                skill: "Passer propriétés (props)",
+                engSkill: "Passing props"
             },
             {
                 key: 4,
@@ -162,19 +173,23 @@ const codingLangList = [
             },
             {
                 key: 2,
-                skill: "Boucles for / while"
+                skill: "Boucles for / while",
+                engSkill: "for / while Statements"
             },
             {
                 key: 3,
-                skill: "Classes / Métohdes"
+                skill: "Classes / Métohdes",
+                engSkill: "Classes / Methods"
             },
             {
                 key: 4,
-                skill: "Constructeurs"
+                skill: "Constructeurs",
+                engSkill: "Constructor"
             },
             {
                 key: 5,
-                skill: "Polymorphisme"
+                skill: "Polymorphisme",
+                engSkill: "Plymorphism"
             }
         ]
     },
@@ -190,7 +205,8 @@ const codingLangList = [
             },
             {
                 key: 2,
-                skill: "Gestion du DOM"
+                skill: "Gestion du DOM",
+                engSkill: "DOM Manipulation"
             },
         ]
     }

@@ -25,7 +25,7 @@ function Option(props) {
             </div>
             <div className="settings-block">
                 <img className="settings-icon" src={french} alt="Icône français"/>
-                <div className="settings-btn-block">
+                <div className="settings-btn-block" onClick={props.toggleEnglishMode}>
                     <div className="settings-btn-bubble"></div>
                 </div>
                 <img className="settings-icon" src={english} alt="Icône anglais"/>

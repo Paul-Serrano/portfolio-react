@@ -18,6 +18,7 @@ import Bonus from "./components/bonus/Bonus";
 function App() {
 
     const [lightMode, setLightMode] = useState(false)
+    const [langMode, setLangMode] = useState(false)
 
     function toggleDarkMode() {
         setLightMode(prevLightMode => !prevLightMode)
@@ -25,24 +26,32 @@ function App() {
         lightMode ? lightModeBtn.style.justifyContent = "flex-start" : lightModeBtn.style.justifyContent = "flex-end"
     }
 
+    function toggleEnglishMode() {
+        setLangMode(prevLangMode => !prevLangMode)
+        const langModeBtn = document.getElementsByClassName("settings-btn-block")[1];
+        langMode ? langModeBtn.style.justifyContent = "flex-start" : langModeBtn.style.justifyContent = "flex-end"
+    }
+
+    console.log(langMode)
+
   return (
     <div className="App">
         <main className={lightMode ? "main light-mode" : "main"}>
             <div className="left-side">
-                <Nav/>
-                <Option toggleDarkMode={toggleDarkMode}/>
-                <Pro/>
-                <Realisation/>
-                <Competence/>
-                <ParcoursPro/>
-                <ParcoursAcad/>
+                <Nav language={langMode}/>
+                <Option toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>
+                <Pro language={langMode}/>
+                <Realisation language={langMode}/>
+                <Competence language={langMode}/>
+                <ParcoursPro language={langMode}/>
+                <ParcoursAcad language={langMode}/>
             </div>
             <div className="right-side">
-                <Perso/>
-                <Apropos/>
-                <Voyages/>
-                <Loisirs/>
-                <Bonus/>
+                <Perso language={langMode}/>
+                <Apropos language={langMode}/>
+                <Voyages language={langMode}/>
+                <Loisirs language={langMode}/>
+                <Bonus language={langMode}/>
                 <Footer/>
             </div>
         </main>

@@ -3,8 +3,11 @@ import BlockTitle from "../index/parts/BlockTitle";
 import projectList from "../../data/projectList";
 import BlockNav from "../index/parts/BlockNav";
 import {useMemo} from "react";
+import {useState} from "react";
 
-function Realisation() {
+function Realisation({language}) {
+
+    const [langMode, setLangMode] = useState(false)
 
     function delay(a, b) {
         setTimeout(function fadeOn() {
@@ -50,9 +53,10 @@ function Realisation() {
         return projectList.map((item) => (
             <Project
                 key={item.key}
-                title={item.name}
+                title={language ? "" : item.name}
                 link={item.link}
                 langs={item.lang}
+                language={language}
             />
         ));
     }, []);
@@ -60,18 +64,18 @@ function Realisation() {
     return (
         <div className="realisations pro-block">
             <BlockTitle
-                title="Réalisations"
+                title={language ? "Projects" : "Réalisations"}
                 close={closeReal}
             />
             <div className="realisation-content">
                 {projects}
             </div>
             <BlockNav
-                left="Compétences"
+                left={language ? "Skills" : "Compétences"}
                 switchl={switchComp}
-                center="Parcours Porfessionnel"
+                center={language ? "Work Experiences" : "Parcours Professionnel"}
                 switchc={switchParcoursPro}
-                right="Parcours Académique"
+                right={language ? "Academic Learning" : "Parcours Académique"}
                 switchr={switchParcoursAcad}
             />
         </div>

@@ -51,6 +51,7 @@ const projectList = [
     {
         key: 1,
         name: "Site de mariage from scratch",
+        engName: "Wedding website from scratch",
         link: "https://mariage-hugo-et-noemie.fr/view/index.php",
         lang: [css, html, javascript, php, mySql]
 
@@ -59,6 +60,7 @@ const projectList = [
     {
         key: 2,
         name: "Site de paris sportifs",
+        engName: "Betting Website",
         link: "https://akkezxla.ae.lu/Akkezxla-Betting-Site/bet-list.php",
         lang: [css, html, javascript, php, mySql]
     },
@@ -66,6 +68,7 @@ const projectList = [
     {
         key: 3,
         name: "Site de location d'appartement",
+        engName: "Renting flat website",
         link: "http://paris-island.com/",
         lang: [wordpress, css, javascript]
     }

@@ -1,12 +1,12 @@
 import BlockTitle from "../index/parts/BlockTitle";
 import BlockNav from "../index/parts/BlockNav";
 import codingLangList from "../../data/codingLangList";
-import environmentList from "../../data/environmentList"
+import environmentList from "../../data/environmentList";
 import LangBubble from "./LangBubble";
 import EnvironmentBubble from "./EnvironmentBubble";
 import {useMemo} from "react";
 
-function Competence() {
+function Competence({language}) {
 
     const codingLangs = useMemo(() => {
         return codingLangList.map((item) => (
@@ -16,6 +16,7 @@ function Competence() {
                 alt={item.alt}
                 name={item.name}
                 skills={item.skills}
+                language={language}
             />
         ));
     }, []);
@@ -75,27 +76,27 @@ function Competence() {
     return(
         <div className="skills pro-block">
             <BlockTitle
-                title="Compétences"
+                title={language ? "Skills" : "Compétences"}
                 close={closeComp}
             />
             <div className="languages-block">
-                <p className="skills-title">Langages de développement</p>
+                <p className="skills-title">{language ? "Coding Languages" : "Language de Développement"}</p>
                 <div className="languages">
                     {codingLangs}
                 </div>
             </div>
             <div className="environment-block">
-                <p className="skills-title">Environnement technique</p>
+                <p className="skills-title">{language ? "Technical Environment" : "Environnement Technique"}</p>
                 <div className="environment">
                     {environment}
                 </div>
             </div>
             <BlockNav
-                left="Réalisations"
+                left={language ? "Projects" : "Réalisations"}
                 switchl={switchReal}
-                center="Parcours Professionnel"
+                center={language ? "Work Experiences" : "Parcours Professionnel"}
                 switchc={switchParcoursPro}
-                right="Parcours Académique"
+                right={language ? "Academic Learning" : "Parcours Académique"}
                 switchr={switchParcoursAcad}
             />
         </div>

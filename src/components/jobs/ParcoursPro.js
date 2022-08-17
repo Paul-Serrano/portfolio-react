@@ -3,12 +3,16 @@ import BlockNav from "../index/parts/BlockNav";
 import workList from "../../data/workList";
 import Work from "./Work";
 
-function ParcoursPro() {
+function ParcoursPro({language}) {
 
     const work = workList.map(item => {
         return <Work
             key={item.key}
-            item={item}
+            title={language && item.engTitle? item.engTitle : item.title}
+            company={item.company}
+            description={language && item.engDescription ? item.engDescription : item.description}
+            city={language && item.engCity ? item.engCity : item.city}
+            date={language && item.engDate ? item.engDate : item.date}
         />
     })
 
@@ -55,18 +59,18 @@ function ParcoursPro() {
     return(
         <div className="parcours-pro pro-block">
             <BlockTitle
-                title="Parcours Professionnel"
+                title={language ? "Work Experiences" : "Parcours Professionnel"}
                 close={closePro}
             />
             <div className="work-content">
                 {work}
             </div>
             <BlockNav
-                left="Réalisations"
+                left={language ? "Projects" : "Réalisations"}
                 switchl={switchReal}
-                center="Compétences"
+                center={language ? "Skills" : "Compétences"}
                 switchc={switchComp}
-                right="Parcours Académique"
+                right={language ? "Academic Learning" : "Parcours Académique"}
                 switchr={switchParcoursAcad}
             />
         </div>

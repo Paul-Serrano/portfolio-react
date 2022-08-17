@@ -3,14 +3,14 @@ import studyList from "../../data/studyList";
 import BlockTitle from "../index/parts/BlockTitle";
 import BlockNav from "../index/parts/BlockNav";
 
-function ParcoursAcad() {
+function ParcoursAcad({language}) {
 
     const studies = studyList.map(item => {
         return <Study
             key={item.key}
-            title={item.title}
-            location={item.location}
-            city={item.city}
+            title={language && item.engTitle ? item.engTitle : item.title}
+            location={language && item.engLocation ? item.engLocation : item.location}
+            city={language && item.engCity ? item.engCity : item.city}
             date={item.date}
         />
     })
@@ -58,16 +58,16 @@ function ParcoursAcad() {
     return(
         <div className="parcours-acad pro-block">
             <BlockTitle
-                title="Parcours Académique"
+                title={language ? "Academic Learning" : "Parcours Académique"}
                 close={closeAcad}
             />
             {studies}
             <BlockNav
-                left="Réalisations"
+                left={language ? "Projects" : "Réalisations"}
                 switchl={switchReal}
-                center="Compétences"
+                center={language ? "Skills" : "Compétences"}
                 switchc={switchComp}
-                right="Parcours Professionnel"
+                right={language ? "Work Exepriences" : "Parcours Professionnel"}
                 switchr={switchParcoursPro}
             />
         </div>

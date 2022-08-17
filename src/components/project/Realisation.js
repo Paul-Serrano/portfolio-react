@@ -2,7 +2,6 @@ import Project from "./Project";
 import BlockTitle from "../index/parts/BlockTitle";
 import projectList from "../../data/projectList";
 import BlockNav from "../index/parts/BlockNav";
-import {useMemo} from "react";
 import {useState} from "react";
 
 function Realisation({language}) {
@@ -49,17 +48,15 @@ function Realisation({language}) {
         delay(parcoursAcad, real)
     }
 
-    const projects = useMemo(() => {
-        return projectList.map((item) => (
-            <Project
-                key={item.key}
-                title={language ? "" : item.name}
-                link={item.link}
-                langs={item.lang}
-                language={language}
-            />
-        ));
-    }, []);
+    const projects = projectList.map((item) => (
+        <Project
+            key={item.key}
+            name={language && item.engName ? item.engName : item.name}
+            link={item.link}
+            langs={item.lang}
+            language={language}
+        />
+    ));
 
     return (
         <div className="realisations pro-block">

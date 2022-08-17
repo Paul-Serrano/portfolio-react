@@ -1,18 +1,8 @@
-import {useMemo} from "react";
-
 function LangBubble({src, alt, name, skills, language}) {
 
-    const skillContent = useMemo(() => {
-        return skills.map((item) => (
-                <li className="lang-bubble-txt" key={item.key}>{language ? item.engSkill : item.skill}</li>
+    const skillContent = skills.map((item) => (
+            <li className="lang-bubble-txt" key={item.key}>{language && item.engSkill? item.engSkill : item.skill}</li>
         ));
-    }, [skills]);
-
-    const englishSkillContent = useMemo(() => {
-        return skills.map((item) => (
-            <li className="lang-bubble-txt" key={item.key}>{item.engSkill}</li>
-        ));
-    }, [skills]);
 
     console.log(language)
 

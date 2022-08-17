@@ -2,10 +2,6 @@ import realisationIcon from "../img/website.png"
 import competencesIcon from "../img/skills.png"
 import proIcon from "../img/work.png"
 import acadIcon from "../img/study.png"
-import aProposIcon from "../img/self.png";
-import voyageIcon from "../img/travel.png";
-import loisirIcon from "../img/hobby.png";
-import bonusIcon from "../img/bonus.png";
 
 function delay(a, b) {
     setTimeout(function fadeOn() {

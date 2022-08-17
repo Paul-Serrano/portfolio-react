@@ -1,6 +1,6 @@
 import {useMemo} from "react";
 
-function Project({engTitle, title, link, langs, language}) {
+function Project({name, link, langs}) {
 
     const projectLang = useMemo(() => {
         return langs.map((lang) => (
@@ -11,7 +11,7 @@ function Project({engTitle, title, link, langs, language}) {
     return (
         <div className="project">
             <a href={link} className="project-txt" target="_blank">
-                {language ? engTitle : title}
+                {name}
             </a>
             <div className="project-content">{projectLang}</div>
         </div>

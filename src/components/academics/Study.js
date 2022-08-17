@@ -1,11 +1,11 @@
-function Study(props) {
+function Study({title, city, date, location}) {
     return(
         <div className="study">
-            <p className="study-title">{props.title}</p>
-            <span className="study-location">{props.location}</span>
+            <p className="study-title">{title}</p>
+            <span className="study-location">{location}</span>
             <span> -- </span>
-            <span className="study-city">{props.city}</span>
-            <p className="study-date">{props.date}</p>
+            <span className="study-city">{city}</span>
+            <p className="study-date">{date}</p>
         </div>
     )
 }

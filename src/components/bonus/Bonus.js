@@ -1,10 +1,9 @@
 import BlockNav from "../index/parts/BlockNav";
 import BlockTitle from "../index/parts/BlockTitle";
-import {useMemo} from "react";
-import BonusList from "../../data/BonusList";
+import bonusList from "../../data/bonusList";
 import BonusBlock from "./BonusBlock";
 
-function Bonus() {
+function Bonus({language}) {
 
     function delay(a, b) {
         setTimeout(function fadeOn() {
@@ -46,15 +45,13 @@ function Bonus() {
         delay(loisirs, bonus);
     }
 
-    const bonus = useMemo(() => {
-        return BonusList.map((item) => (
+    const bonus = bonusList.map((item) => (
             <BonusBlock
                 key={item.key}
-                title={item.title}
+                title={language ? item.engTitle : item.title}
                 bonus={item.bonus}
             />
         ));
-    }, []);
 
     return(
         <div className="bonus perso-block">
@@ -66,11 +63,11 @@ function Bonus() {
                 {bonus}
             </div>
             <BlockNav
-                left="A propos"
+                left={language ? "About" : "A propos"}
                 switchl={switchApropos}
-                center="Voyages"
+                center={language ? "Travel" : "Voyages"}
                 switchc={switchVoyages}
-                right="Loisirs"
+                right={language ? "Hobby" : "Loisirs"}
                 switchr={switchLoisirs}
             />
         </div>

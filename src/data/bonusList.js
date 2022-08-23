@@ -36,11 +36,13 @@ const bonusList = [
     {
         key: 1,
         title: "Découvrez ces groupes fantastiques !",
+        engTitle: "Checkt out those amazing bands",
         bonus: [clark, etincelle]
     },
     {
         key: 2,
         title: "Envie d'aider les plus démunis ? Ces associations sont faites pour vous !",
+        engTitle: "Feel like halping people in need ? Those fondations are meant for you !",
         bonus: [virlanie, france]
     }
 ]

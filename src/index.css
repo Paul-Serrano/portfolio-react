@@ -617,6 +617,10 @@ body {
   font-size: 1.25em;
 }
 
+.travel-txt {
+  height: 50%;
+}
+
 .gallery {
   position: fixed;
   top: 0;
@@ -709,6 +713,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.25em;
+  width: 65%;
 }
 
 .about-block {
@@ -716,6 +721,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  height: 50%;
 }
 
 .about-content {

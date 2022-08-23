@@ -107,7 +107,8 @@ const travelList = [
     {
         key: 1,
         title: "Philippines",
-        description: "J’ai vécu 1 ans aux Philippines entre 2019 et 2020. J’y ai découvert les rizières de Banaue, les plages de Mindoro et Baler, mais aussi  la vie nocturne de Manille.",
+        description: "J’ai vécu 1 ans aux Philippines entre 2019 & 2020. J’y ai découvert les rizières de Banaue, les plages de Mindoro et Baler, mais aussi  la vie nocturne de Manille.",
+        engDescription: "I lived ine the Philippines for a year between 2019 & 2020. I've discovered Banaue rice farms, Mindoro and Baler beaches, but also the Manila nightlife.",
         coverimg: coverPhilippines,
         coveralt: "Rizières de Banaue",
         photos: [...photosPhilippines],
@@ -117,7 +118,9 @@ const travelList = [
     {
         key: 2,
         title: "Italie",
-        description: "Je suis resté 6 mois à Florence grâce au programme Erasmus, pour terminer ma licence de mathématiques. Coeur de la Renaissance, ses rues sont empreintes d’histoire.",
+        engTitle: "Italia",
+        description: "Je suis resté 6 mois à Florence grâce au programme Erasmus, pour terminer ma licence de Mathématiques. Coeur de la Renaissance, ses rues sont empreintes d’Histoire.",
+        engDescription: "I stayed 6 months in Firenze thanks to the Erasmus programm, to end my Mathematics degree. Heart of the Renaissance, its streets are full of History",
         coverimg: coverItalie,
         coveralt: "Duomo de Florence",
         photos: [...photosItalie],
@@ -128,7 +131,9 @@ const travelList = [
     {
         key: 3,
         title: "Maroc",
+        engTitle: "Morocco",
         description: "J’ai passé 4 jours à Marrakech. Se perdre dans les labyrinthes du Souk de la Medina, visiter des édifices spirituels vieux de plusieurs siècles, diner en plein milieux du désert...",
+        engDescription: "I spent 4 days in Marrakech. Losing yourself inside the Souk labyrinth, discovering spirituals building several century older than you, dining in the middle of the desert...",
         coverimg: coverMaroc,
         coveralt: "Souk de Marrakech",
         photos: [...photosMaroc],

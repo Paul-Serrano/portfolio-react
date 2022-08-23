@@ -1,9 +1,9 @@
 import BlockNav from "../index/parts/BlockNav";
 import BlockTitle from "../index/parts/BlockTitle";
-import travelList from "../../data/TravelList";
+import travelList from "../../data/travelList";
 import Travel from "./Travel";
 
-function Voyages() {
+function Voyages({language}) {
 
     function delay(a, b) {
         setTimeout(function fadeOn() {
@@ -50,8 +50,12 @@ function Voyages() {
         return(
             <Travel
                 key={item.key}
-                item={item}
+                coverimg={item.coverimg}
+                coveralt={item.coveralt}
+                title={language && item.engTitle ? item.engTitle : item.title}
+                description={language && item.engDescription ? item.engDescription : item.description}
                 open={item.open}
+                language={language}
             />
         )
     })
@@ -59,16 +63,16 @@ function Voyages() {
     return(
         <div className="travel perso-block">
             <BlockTitle
-                title="Voyages"
+                title={language ? "Travel" : "Voyages"}
                 close={closeVoyages}
             />
             <div className="travel-container">
                 {travel}
             </div>
             <BlockNav
-                left="A propos"
+                left={language ? "About" : "A propos"}
                 switchl={switchApropos}
-                center="Loisirs"
+                center={language ? "Hobby" : "Loisirs"}
                 switchc={switchLoisirs}
                 right="Bonus"
                 switchr={switchBonus}

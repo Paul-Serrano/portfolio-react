@@ -1,11 +1,11 @@
 import Gallery from "./Gallery";
-import TravelList from "../../data/TravelList";
+import travelList from "../../data/travelList";
 import {useMemo} from "react";
 
-function Travel(props) {
+function Travel({coverimg, coveralt, open, title, description}) {
 
     const gallery = useMemo(() => {
-        return TravelList.map((photo) => (
+        return travelList.map((photo) => (
             <Gallery
                 key={photo.key}
                 photos={photo.photos}
@@ -16,10 +16,10 @@ function Travel(props) {
 
     return(
         <div className="travel-block">
-            <img className="travel-cover-img" src={props.item.coverimg} alt={props.item.coveralt} onClick={props.open}/>
+            <img className="travel-cover-img" src={coverimg} alt={coveralt} onClick={open}/>
             <div className="travel-content">
-                <p className="travel-title">{props.item.title}</p>
-                <p className="travel-txt">{props.item.description}</p>
+                <p className="travel-title">{title}</p>
+                <p className="travel-txt">{description}</p>
             </div>
             {gallery}
         </div>

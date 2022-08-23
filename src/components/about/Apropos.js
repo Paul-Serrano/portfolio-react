@@ -3,7 +3,7 @@ import BlockTitle from "../index/parts/BlockTitle";
 import aboutList from "../../data/aboutList";
 import profilPicture from "../../img/photo-paul.jpg"
 
-function Apropos() {
+function Apropos({language}) {
 
     function delay(a, b) {
         setTimeout(function fadeOn() {
@@ -48,8 +48,8 @@ function Apropos() {
     const about = aboutList.map(item => {
         return(
             <div key={item.key} className="about-content">
-                <p className="about-title">{item.title}</p>
-                <p className="about-txt">{item.description}</p>
+                <p className="about-title">{language && item.engTitle ? item.engTitle : item.title}</p>
+                <p className="about-txt">{language && item.engDescription ? item.engDescription : item.description}</p>
             </div>
         )
     })
@@ -57,15 +57,15 @@ function Apropos() {
     return(
         <div className="about perso-block">
             <BlockTitle
-                title="A propos"
+                title={language ? "About" : "A propos"}
                 close={closeApropos}
             />
             <div className="about-container">
                 <div className="about-intro">
                     <img className="about-img" src={profilPicture} alt="Paul Serrano"/>
                     <div className="about-intro-content">
-                        <p className="about-birth">né le 30/10/1992 à Pau (64000)</p>
-                        <p className="about-tel">téléphone : 0624232427</p>
+                        <p className="about-birth">{language ? "born in" : "né le"} 30/10/1992 -- Pau (64000)</p>
+                        <p className="about-tel">{language ? "phone" : "téléphone"} : 0624232427</p>
                     </div>
                 </div>
                 <div className="about-block">
@@ -73,9 +73,9 @@ function Apropos() {
                 </div>
             </div>
             <BlockNav
-                left="Voyages"
+                left={language ? "Travel" : "Voyages"}
                 switchl={switchVoyages}
-                center="Loisirs"
+                center={language ? "Hobby" : "Loisirs"}
                 switchc={switchLoisirs}
                 right="Bonus"
                 switchr={switchBonus}

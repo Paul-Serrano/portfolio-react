@@ -1,7 +1,7 @@
 import BlockNav from "../index/parts/BlockNav";
 import BlockTitle from "../index/parts/BlockTitle";
 
-function Loisirs() {
+function Loisirs({language}) {
 
     function delay(a, b) {
         setTimeout(function fadeOn() {
@@ -46,13 +46,13 @@ function Loisirs() {
     return(
         <div className="hobby perso-block">
             <BlockTitle
-                title="Loisirs"
+                title={language ? "Hobby" : "Loisirs"}
                 close={closeLoisirs}
             />
             <BlockNav
-                left="A propos"
+                left={language ? "About" : "A propos"}
                 switchl={switchApropos}
-                center="Voyages"
+                center={language ? "Travel" : "Voyages"}
                 switchc={switchVoyages}
                 right="Bonus"
                 switchr={switchBonus}

@@ -4,12 +4,10 @@ import codingLangList from "../../data/codingLangList";
 import environmentList from "../../data/environmentList";
 import LangBubble from "./LangBubble";
 import EnvironmentBubble from "./EnvironmentBubble";
-import {useMemo} from "react";
 
 function Competence({language}) {
 
-    const codingLangs = useMemo(() => {
-        return codingLangList.map((item) => (
+    const codingLangs = codingLangList.map((item) => (
             <LangBubble
                 key={item.key}
                 src={item.src}
@@ -19,19 +17,17 @@ function Competence({language}) {
                 language={language}
             />
         ));
-    }, []);
 
-    const environment = useMemo(() => {
-        return environmentList.map((item) => (
+    const environment = environmentList.map((item) => (
             <EnvironmentBubble
                 key={item.key}
                 src={item.src}
                 alt={item.alt}
                 name={item.name}
                 skills={item.skills}
+                language={language}
             />
         ));
-    }, []);
 
     function delay(a, b) {
         setTimeout(function fadeOn() {

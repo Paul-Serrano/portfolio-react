@@ -15,11 +15,13 @@ const environmentList = [
         skills: [
             {
                 key: 1,
-                skill: "Utiliser un thème"
+                skill: "Utiliser un thème",
+                engSkill: "Use a theme"
             },
             {
                 key: 2,
-                skill: "Installer des plugs-ins"
+                skill: "Installer des plugs-ins",
+                engSkill: "Install plug-ins"
             }
         ]
     },
@@ -31,11 +33,13 @@ const environmentList = [
         skills: [
             {
                 key: 1,
-                skill: "Paramétrer un projet en ASP/C#"
+                skill: "Paramétrer un projet en ASP/C#",
+                engSkill: "Set up an ASP/C# project"
             },
             {
                 key: 2,
-                skill: "Utiliser VSCode pour développer"
+                skill: "Utiliser VSCode pour coder",
+                engSkill: "Use VSCode to code"
             }
         ]
     },
@@ -47,15 +51,18 @@ const environmentList = [
         skills: [
             {
                 key: 1,
-                skill: "Utiliser la suite Jetbrains"
+                skill: "Utiliser la suite Jetbrains",
+                engSkill: "Use Jetbrains products"
             },
             {
                 key: 2,
-                skill: "Webstorm pour les projets webs"
+                skill: "Webstorm pour les projets webs",
+                engSkill: "Webstorm for web projects"
             },
             {
                 key: 3,
-                skill: "Intelligi pour coder en Java"
+                skill: "Intelligi pour coder en Java",
+                engSkill: "intelligi for java coding"
             }
         ]
     },
@@ -67,11 +74,13 @@ const environmentList = [
         skills: [
             {
                 key: 1,
-                skill: "Création de maquettes Web"
+                skill: "Création de maquettes Web",
+                engSkill: "Make websites sketches"
             },
             {
                 key: 2,
-                skill: "Animations entre les pages"
+                skill: "Animations entre les pages",
+                engSkill: "Animations between pages"
             }
         ]
     },
@@ -83,19 +92,23 @@ const environmentList = [
         skills: [
             {
                 key: 1,
-                skill: "Méthodologie agile/Scrum"
+                skill: "Méthodologie agile/Scrum",
+                engSkill: "Scrum/agile methodology"
             },
             {
                 key: 2,
-                skill: "Création de feuilles de route"
+                skill: "Création de feuilles de route",
+                engSkill: "Create Backlog"
             },
             {
                 key: 3,
-                skill: "Gestion des Backlogs"
+                skill: "Gestion des Backlogs",
+                engSkill: "Backlogs management"
             },
             {
                 key: 4,
-                skill: "Implémentation de Sprints / Tickets"
+                skill: "Implémentation de Sprints / Tickets",
+                engSkill: "Creation of Srpints / Tickets"
             },
         ]
     },
@@ -107,7 +120,8 @@ const environmentList = [
         skills: [
             {
                 key: 1,
-                skill: "Gestion de versions"
+                skill: "Gestion de versions",
+                engSkill: "Versionning"
             },
             {
                 key: 2,
@@ -115,11 +129,13 @@ const environmentList = [
             },
             {
                 key: 3,
-                skill: "Utilisation de GitKraken"
+                skill: "Utilisation de GitKraken",
+                engSkill: "Use GitKraken"
             },
             {
                 key: 4,
-                skill: "Hébergement de projets"
+                skill: "Hébergement de projets",
+                engSkill: "Hosting proejcts"
             }
 
         ]

@@ -902,6 +902,7 @@ body {
 
   .about-intro-content {
     font-size: 1em;
+    width: 75%;
   }
 
   .about-title {
@@ -1072,7 +1073,7 @@ body {
   }
 
   .about-intro-content {
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 5%;
   }
 
@@ -1086,6 +1087,11 @@ body {
 
   .about-img {
     width: 35%;
+  }
+
+  .travel-block {
+    width: 100%;
+    height: 30%;
   }
 
   .travel-cover-img {

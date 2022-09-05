@@ -1,12 +1,8 @@
-import {useMemo} from "react";
-
 function EnvironmentBubble({src, alt, name, skills, language}) {
 
-    const skillContent = useMemo(() => {
-        return skills.map((item) => (
+    const skillContent = skills.map((item) => (
             <li className="lang-bubble-txt" key={item.key}>{language && item.engSkill? item.engSkill : item.skill}</li>
         ));
-    }, [skills]);
 
         return (
         <div className="env-block">

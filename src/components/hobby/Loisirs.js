@@ -1,5 +1,6 @@
 import BlockNav from "../index/parts/BlockNav";
 import BlockTitle from "../index/parts/BlockTitle";
+import Player from "./Player";
 
 function Loisirs({language}) {
 
@@ -49,6 +50,7 @@ function Loisirs({language}) {
                 title={language ? "Hobby" : "Loisirs"}
                 close={closeLoisirs}
             />
+            <Player/>
             <BlockNav
                 left={language ? "About" : "A propos"}
                 switchl={switchApropos}

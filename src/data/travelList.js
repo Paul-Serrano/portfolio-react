@@ -1,6 +1,27 @@
 import coverPhilippines from "../img/banaue.png"
+
 import coverItalie from "../img/florence.png"
+import italie01 from "../img/florence-01.png"
+import italie02 from "../img/florence-02.png"
+import italie03 from "../img/florence-03.png"
+import italie04 from "../img/florence-04.png"
+import italie05 from "../img/florence-05.png"
+import italie06 from "../img/florence-06.png"
+import italie07 from "../img/florence-07.png"
+import italie08 from "../img/florence-08.png"
+
 import coverMaroc from "../img/marrakech.png"
+import maroc01 from "../img/marrakech01.png"
+import maroc02 from "../img/marrakech02.png"
+import maroc03 from "../img/marrakech03.png"
+import maroc04 from "../img/marrakech04.png"
+import maroc05 from "../img/marrakech05.png"
+import maroc06 from "../img/marrakech06.png"
+import maroc07 from "../img/marrakech07.png"
+import maroc08 from "../img/marrakech08.png"
+import maroc09 from "../img/marrakech09.png"
+import maroc10 from "../img/marrakech10.png"
+import maroc11 from "../img/marrakech11.png"
 
 const photosPhilippines = [
     {
@@ -37,67 +58,102 @@ const photosPhilippines = [
 
 const photosItalie = [
     {
-        key: "Duomo de Florence",
-        src: coverItalie,
-        alt: "Duomo de Florence"
+        key: "Basilica Santa Croce",
+        src: italie01,
+        alt: "Basilica Santa Croce"
     },
     {
-        key: 2,
-        src: coverMaroc,
-        alt: ""
+        key: "Chiesa Santa Maria Novella",
+        src: italie02,
+        alt: "Chiesa Santa Maria Novella"
     },
     {
-        key: 3,
-        src: coverPhilippines,
-        alt: ""
+        key: "Ponte Vecchio",
+        src: italie03,
+        alt: "Ponte Vecchio"
     },
     {
-        key: 4,
-        src: coverItalie,
-        alt: ""
+        key: "Cupola del Brunelleschi, interno",
+        src: italie04,
+        alt: "Cupola del Brunelleschi, interno"
     },
     {
-        key: 5,
-        src: coverMaroc,
-        alt: ""
+        key: "Cupola del Brunelleschi",
+        src: italie05,
+        alt: "Cupola del Brunelleschi"
     },
     {
-        key: 6,
-        src: coverPhilippines,
-        alt: ""
+        key: "Campanile di Giotto",
+        src: italie06,
+        alt: "Campanile di Giotto"
+    },
+    {
+        key: "Pallazzo Vecchio",
+        src: italie07,
+        alt: "Pallazzo Vecchio"
+    },
+    {
+        key: "Duomo, Santa Maria del Fiore",
+        src: italie08,
+        alt: "Duomo, Santa Maria del Fiore"
     },
 ]
 
 const photosMaroc = [
     {
-        key: "Souk de Marrakech",
-        src: coverMaroc,
-        alt: "Souk de Marrakech"
+        key: "Palais El Badi",
+        src: maroc01,
+        alt: "Palais El Badi"
     },
     {
-        key: 2,
-        src: coverPhilippines,
-        alt: ""
+        key: "Palais Bahia",
+        src: maroc02,
+        alt: "Palais Bahia"
     },
     {
-        key: 3,
-        src: coverItalie,
-        alt: ""
+        key: "Mosquée de Koutoubia, intérieur",
+        src: maroc03,
+        alt: "Mosquée de Koutoubia, intérieur"
     },
     {
-        key: 4,
-        src: coverMaroc,
-        alt: ""
+        key: "Place Jemaa el Fna",
+        src: maroc04,
+        alt: "Place Jemaa el Fna"
     },
     {
-        key: 5,
-        src: coverPhilippines,
-        alt: ""
+        key: "Minaret Koutoubia",
+        src: maroc05,
+        alt: "Minaret Koutoubia"
     },
     {
-        key: 6,
-        src: coverItalie,
-        alt: ""
+        key: "Jardin Majorelles",
+        src: maroc06,
+        alt: "Jardin Majorelles"
+    },
+    {
+        key: "Jardin Majorelles",
+        src: maroc07,
+        alt: "Jardin Majorelles"
+    },
+    {
+        key: "Jardin Majorelles",
+        src: maroc08,
+        alt: "Jardin Majorelles"
+    },
+    {
+        key: "Désert Marocain",
+        src: maroc09,
+        alt: "Désert Marocain"
+    },
+    {
+        key: "Place Jemaa el Fna",
+        src: maroc10,
+        alt: "Place Jemaa el Fna"
+    },
+    {
+        key: "Désert Marocain",
+        src: maroc11,
+        alt: "Désert Marocain"
     },
 ]
 

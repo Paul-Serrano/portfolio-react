@@ -32,8 +32,6 @@ function App() {
         langMode ? langModeBtn.style.justifyContent = "flex-start" : langModeBtn.style.justifyContent = "flex-end"
     }
 
-    console.log(langMode)
-
   return (
     <div className="App">
         <main className={lightMode ? "main light-mode" : "main"}>

@@ -4,8 +4,6 @@ function LangBubble({src, alt, name, skills, language}) {
             <li className="lang-bubble-txt" key={item.key}>{language && item.engSkill? item.engSkill : item.skill}</li>
         ));
 
-    console.log(language)
-
     return (
         <div className="lang-block">
             <img className="lang-icon" src={src} alt={alt}/>

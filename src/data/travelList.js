@@ -1,14 +1,26 @@
 import coverPhilippines from "../img/banaue.png"
+import philippines01 from "../img/philippines01.png"
+import philippines02 from "../img/philippines02.png"
+import philippines03 from "../img/philippines03.png"
+import philippines04 from "../img/philippines04.png"
+import philippines05 from "../img/philippines05.png"
+import philippines06 from "../img/philippines06.png"
+import philippines07 from "../img/philippines07.png"
+import philippines08 from "../img/philippines08.png"
+import philippines09 from "../img/philippines09.png"
+import philippines10 from "../img/philippines10.png"
+import philippines11 from "../img/philippines11.png"
+import philippines12 from "../img/philippines12.png"
 
 import coverItalie from "../img/florence.png"
-import italie01 from "../img/florence-01.png"
-import italie02 from "../img/florence-02.png"
-import italie03 from "../img/florence-03.png"
-import italie04 from "../img/florence-04.png"
-import italie05 from "../img/florence-05.png"
-import italie06 from "../img/florence-06.png"
-import italie07 from "../img/florence-07.png"
-import italie08 from "../img/florence-08.png"
+import italie01 from "../img/florence01.png"
+import italie02 from "../img/florence02.png"
+import italie03 from "../img/florence03.png"
+import italie04 from "../img/florence04.png"
+import italie05 from "../img/florence05.png"
+import italie06 from "../img/florence06.png"
+import italie07 from "../img/florence07.png"
+import italie08 from "../img/florence08.png"
 
 import coverMaroc from "../img/marrakech.png"
 import maroc01 from "../img/marrakech01.png"
@@ -25,35 +37,65 @@ import maroc11 from "../img/marrakech11.png"
 
 const photosPhilippines = [
     {
-        key: "Rizières de Banaue",
-        src: coverPhilippines,
-        alt: "Rizières de Banaue"
+        key: "Banaue Ricefields",
+        src: philippines01,
+        alt: "Banaue Ricefields"
     },
     {
-        key: 2,
-        src: coverItalie,
-        alt: ""
+        key: "Banaue Ricefields",
+        src: philippines02,
+        alt: "Banaue Ricefields"
     },
     {
-        key: 3,
-        src: coverMaroc,
-        alt: ""
+        key: "Banaue Ricefields",
+        src: philippines03,
+        alt: "Banaue Ricefields"
     },
     {
-        key: 4,
-        src: coverPhilippines,
-        alt: ""
+        key: "Zambales Creek",
+        src: philippines04,
+        alt: "Zambales Creek"
     },
     {
-        key: 5,
-        src: coverItalie,
-        alt: ""
+        key: "Manila small Skyline",
+        src: philippines05,
+        alt: "Manila small Skyline"
     },
     {
-        key: 6,
-        src: coverMaroc,
-        alt: ""
+        key: "Mindoro Jungle",
+        src: philippines06,
+        alt: "Mindoro Jungle"
     },
+    {
+        key: "Bantas, Philippinos fishing boats",
+        src: philippines07,
+        alt: "Bantas, Philippinos fishing boats"
+    },
+    {
+        key: "Philippines Sandbank",
+        src: philippines08,
+        alt: "Philippines Sandbank"
+    },
+    {
+        key: "Bantas, Philippinos fishing boats",
+        src: philippines09,
+        alt: "Bantas, Philippinos fishing boats"
+    },
+    {
+        key: "Bantas, Philippinos fishing boats",
+        src: philippines10,
+        alt: "Bantas, Philippinos fishing boats"
+    },
+    {
+        key: "Mindoro House in the Jungle",
+        src: philippines11,
+        alt: "Mindoro House in the Jungle"
+    },
+    {
+        key: "Manila Market",
+        src: philippines12,
+        alt: "Manila Market"
+    }
 ]
 
 const photosItalie = [

@@ -20,6 +20,10 @@ function Pro({language}) {
         <div className="pro">
             <p className="perso-title">{language ? "Professionnal Side" : "Côté Professionnel"}</p>
             <div className="pro-content">
+                <div className="index-cross">
+                    <div className="index-cross-part index-cross-horizontal"></div>
+                    <div className="index-cross-part index-cross-vertical"></div>
+                </div>
                 {block}
             </div>
         </div>

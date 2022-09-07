@@ -12,11 +12,11 @@ function Option(props) {
     }
 
     return (
-        <div className="settings">
-            <button className="settings-return-btn" onClick={closeOption}>
+        <div className={props.class}>
+            <button className={props.intro ? "noDisplay" : "settings-return-btn"} onClick={closeOption}>
                 <img className="settings-return-icon" src={back} alt="Icône retour"/>
             </button>
-            <div className="settings-block settings-border-block">
+            <div className="settings-block">
                 <img className="settings-icon" src={moon} alt="Icône lune"/>
                 <div className="settings-btn-block" onClick={props.toggleDarkMode}>
                     <div className="settings-btn-bubble"></div>

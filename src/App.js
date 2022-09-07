@@ -13,6 +13,7 @@ import Apropos from "./components/about/Apropos";
 import Voyages from "./components/travel/Voyages";
 import Loisirs from "./components/hobby/Loisirs";
 import Bonus from "./components/bonus/Bonus";
+import IntroBoard from "./components/index/IntroBoard";
 
 
 function App() {
@@ -35,9 +36,10 @@ function App() {
   return (
     <div className="App">
         <main className={lightMode ? "main light-mode" : "main"}>
+            <IntroBoard lightMode={lightMode} language={langMode} toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>
             <div className="left-side">
                 <Nav language={langMode}/>
-                <Option toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>
+                <Option class="settings" toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>
                 <Pro language={langMode}/>
                 <Realisation language={langMode}/>
                 <Competence language={langMode}/>

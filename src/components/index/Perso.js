@@ -19,6 +19,10 @@ function Perso({language}) {
         <div className="perso">
             <p className="perso-title">{language ? "Personnal Side" : "Coté Perso"}</p>
             <div className="perso-content">
+                <div className="index-cross">
+                    <div className="index-cross-part index-cross-horizontal"></div>
+                    <div className="index-cross-part index-cross-vertical"></div>
+                </div>
                 {block}
             </div>
         </div>

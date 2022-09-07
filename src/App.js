@@ -19,6 +19,9 @@ function App() {
 
     const [lightMode, setLightMode] = useState(false)
     const [langMode, setLangMode] = useState(false)
+    const [proBlock, setProBlock] = useState(<Pro language={langMode}/>)
+    const [persoBlock, setPersoBlock] = useState(<Perso language={langMode}/>)
+
 
     function toggleDarkMode() {
         setLightMode(prevLightMode => !prevLightMode)

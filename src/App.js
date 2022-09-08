@@ -23,13 +23,17 @@ function App() {
 
     function toggleDarkMode() {
         setLightMode(prevLightMode => !prevLightMode)
-        const lightModeBtn = document.getElementsByClassName("settings-btn-block")[0];
+        const introLightModeBtn = document.getElementsByClassName("settings-btn-block")[0];
+        const lightModeBtn = document.getElementsByClassName("settings-btn-block")[2]
+        lightMode ? introLightModeBtn.style.justifyContent = "flex-start" : introLightModeBtn.style.justifyContent = "flex-end"
         lightMode ? lightModeBtn.style.justifyContent = "flex-start" : lightModeBtn.style.justifyContent = "flex-end"
     }
 
     function toggleEnglishMode() {
         setLangMode(prevLangMode => !prevLangMode)
-        const langModeBtn = document.getElementsByClassName("settings-btn-block")[1];
+        const introLangModeBtn = document.getElementsByClassName("settings-btn-block")[1];
+        const langModeBtn = document.getElementsByClassName("settings-btn-block")[3];
+        langMode ? introLangModeBtn.style.justifyContent = "flex-start" : introLangModeBtn.style.justifyContent = "flex-end"
         langMode ? langModeBtn.style.justifyContent = "flex-start" : langModeBtn.style.justifyContent = "flex-end"
     }
 

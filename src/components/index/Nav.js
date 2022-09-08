@@ -1,4 +1,5 @@
 import menu from "../../img/menu.png"
+import back from "../../img/back-arrow.png"
 
 function Nav({language}) {
 
@@ -7,11 +8,26 @@ function Nav({language}) {
         document.getElementsByClassName("nav")[0].style.display = "none"
     }
 
+    function openIntroBoard() {
+        const pro = document.getElementsByClassName("pro-initial")[0];
+        const perso = document.getElementsByClassName("perso-initial")[0];
+        pro.style.animation = "slidebackdown 1s forwards ease";
+        perso.style.animation = "slidebackup 1s forwards ease";
+        const introBoard = document.getElementsByClassName("intro-board")[0];
+        introBoard.style.display = "flex";
+        introBoard.style.animation = "fadeon 0.5s forwards linear";
+    }
+
     return (
         <div className="nav">
-            <button className="nav-button" onClick={openOption}>
-                <img className="nav-icon" src={menu} alt="menu"/>
-            </button>
+            <div className="nav-btn-block">
+                <button className="nav-button" onClick={openIntroBoard}>
+                    <img src={back} alt="boutton retour"/>
+                </button>
+                <button className="nav-button" onClick={openOption}>
+                    <img className="nav-icon" src={menu} alt="menu"/>
+                </button>
+            </div>
             <p>{language ? "Paul Serrano Developper" : "Paul Serrano Développeur"}</p>
         </div>
     )

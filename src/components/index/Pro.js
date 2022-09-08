@@ -17,7 +17,7 @@ function Pro({language}) {
     })
 
     return (
-        <div className="pro">
+        <div className="pro pro-initial">
             <p className="perso-title">{language ? "Professionnal Side" : "Côté Professionnel"}</p>
             <div className="pro-content">
                 <div className="index-cross">

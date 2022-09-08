@@ -16,7 +16,7 @@ function Perso({language}) {
     })
 
     return (
-        <div className="perso">
+        <div className="perso perso-initial">
             <p className="perso-title">{language ? "Personnal Side" : "Coté Perso"}</p>
             <div className="perso-content">
                 <div className="index-cross">

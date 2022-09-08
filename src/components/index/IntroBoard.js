@@ -1,7 +1,6 @@
 import Option from "../settings/Option";
 import introBoardList from "./introBoardList";
 import profilPicture from "../../img/photo-paul.jpg"
-import introBoard from "./IntroBoard";
 
 function IntroBoard({lightMode, language, toggleDarkMode, toggleEnglishMode}) {
 
@@ -21,6 +20,14 @@ function IntroBoard({lightMode, language, toggleDarkMode, toggleEnglishMode}) {
         setTimeout(function fadeOn() {
             introBoard.style.display = "none";
         }, 500);
+        const pro = document.getElementsByClassName("pro-initial")[0];
+        const perso = document.getElementsByClassName("perso-initial")[0];
+        pro.style.animation = "slideup 1.5s forwards ease";
+        pro.style.top = "0";
+        setTimeout(function fadeBottom() {
+            perso.style.animation = "slidedown 1.5s forwards ease";
+            perso.style.bottom = "0";
+        }, 750);
     }
 
     return(

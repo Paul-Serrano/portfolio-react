@@ -1,6 +1,17 @@
 const workList = [
     {
         key: 1,
+        title: "Développeur Web",
+        engTitle: "Web Developper",
+        company: "WebForMe",
+        description: "Projets e-commerce, SEO, SAO",
+        engDescription: "E-commrce projects, SEO, SAO",
+        city: "Saint-Jean d'Illiac",
+        date: "Septembre 2022 - Mars 2023",
+        engDate: "September 2022 - March 2022"
+    },
+    {
+        key: 2,
         title: "Intégrateur Web",
         engTitle: "Web Integrator",
         company: "Freelance",
@@ -12,7 +23,7 @@ const workList = [
         engDate: "March - April 2020"
     },
     {
-        key: 2,
+        key: 3,
         title: "Commis de cuisine",
         engTitle: "Kitchen clerk",
         company: "Hespérides",
@@ -23,7 +34,7 @@ const workList = [
         engDate: "January - June 2021"
     },
     {
-        key: 3,
+        key: 4,
         title: "Barman / Serveur",
         engTitle: "Bartender / Waiter",
         company: "Brasserie l'Aragon",
@@ -34,7 +45,7 @@ const workList = [
         engDate: "August - October 2020"
     },
     {
-        key: 4,
+        key: 5,
         title: "Préparateur de commades",
         engTitle: "Order Picker",
         company: "Auchan Drive",
@@ -45,7 +56,7 @@ const workList = [
         engDate: "September 2017 - June 2019"
     },
     {
-        key: 5,
+        key: 6,
         title: "Serveur",
         engTitle: "Waiter",
         company: "Pizzeria Livio",

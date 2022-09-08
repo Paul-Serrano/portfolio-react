@@ -516,12 +516,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.project:hover .project-txt{
+  color: #F3EA2A;
 }
 
 .project-txt {
   font-size: 1.25em;
   color: #00BCD4;
   text-decoration: none;
+  transition: linear 0.25s;
 }
 
 .project-content {
@@ -742,6 +748,7 @@ body {
 
 .travel-cover-img:hover {
   opacity: 0.5;
+  transform: scale(1.25);
 }
 
 .travel-content {
@@ -934,6 +941,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s linear;
+}
+
+.bonus-link:hover {
+  transform: scale(1.25);
 }
 
 .bonus-img {

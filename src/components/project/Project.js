@@ -9,12 +9,12 @@ function Project({name, link, langs}) {
     }, [langs]);
 
     return (
-        <div className="project">
-            <a href={link} className="project-txt" target="_blank">
+        <a href={link} className="project" target="_blank">
+            <p className="project-txt">
                 {name}
-            </a>
+            </p>
             <div className="project-content">{projectLang}</div>
-        </div>
+        </a>
     );
 }
 

@@ -1,13 +1,15 @@
 import Option from "../settings/Option";
 import introBoardList from "./introBoardList";
 import profilPicture from "../../img/photo-paul.jpg"
+import {screen} from "@testing-library/react";
 
 function IntroBoard({lightMode, language, toggleDarkMode, toggleEnglishMode}) {
 
     const intro = introBoardList.map(intro => {
             return (
                 <div className="intro-block" key={intro.key}>
-                    <p className="intro-block-title">{language? intro.engTitle : intro.title}</p>
+                    <p className={intro.name ? "intro-title" : "noDisplay"}>{intro.name}</p>
+                    <p className="intro-title">{language? intro.engTitle : intro.title}</p>
                     <p className="intro-block-txt">{language ? intro.engDescription : intro.description}</p>
                 </div>
             )
@@ -22,12 +24,16 @@ function IntroBoard({lightMode, language, toggleDarkMode, toggleEnglishMode}) {
         }, 500);
         const pro = document.getElementsByClassName("pro-initial")[0];
         const perso = document.getElementsByClassName("perso-initial")[0];
-        pro.style.animation = "slideup 1.5s forwards ease";
-        pro.style.top = "0";
+        pro.style.animation = "slideright 1.5s forwards ease";
+        pro.style.right = "0";
         setTimeout(function fadeBottom() {
-            perso.style.animation = "slidedown 1.5s forwards ease";
-            perso.style.bottom = "0";
+            perso.style.animation = "slideleft 1.5s forwards ease";
+            perso.style.left = "0";
         }, 750);
+        const main = document.getElementsByTagName("main")[0];
+        main.style.animation = "positionswitch 1s forwards linear";
+        main.style.animationDelay = "2s";
+        console.log(main);
     }
 
     return(

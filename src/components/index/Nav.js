@@ -11,11 +11,19 @@ function Nav({language}) {
     function openIntroBoard() {
         const pro = document.getElementsByClassName("pro-initial")[0];
         const perso = document.getElementsByClassName("perso-initial")[0];
-        pro.style.animation = "slidebackdown 1s forwards ease";
-        perso.style.animation = "slidebackup 1s forwards ease";
+        pro.style.animation = "slidebackright 1s forwards ease";
+        perso.style.animation = "slidebackleft 1s forwards ease";
+        setTimeout(function positionBack() {
+            pro.style.left = "100%";
+            perso.style.right = "100%";
+        }, 1000)
         const introBoard = document.getElementsByClassName("intro-board")[0];
         introBoard.style.display = "flex";
         introBoard.style.animation = "fadeon 0.5s forwards linear";
+        const main = document.getElementsByTagName("main")[0];
+        main.style.animation = "positionswitchback 1s forwards linear";
+        main.style.animationDelay = "2s";
+        console.log(main);
     }
 
     return (

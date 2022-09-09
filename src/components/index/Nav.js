@@ -25,7 +25,6 @@ function Nav({language}) {
         )
         const main = document.getElementsByTagName("main")[0];
         main.style.animation = "positionswitchback 0.01s forwards linear";
-        console.log(main);
     }
 
     return (

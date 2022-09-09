@@ -1,7 +1,6 @@
 import Option from "../settings/Option";
 import introBoardList from "./introBoardList";
 import profilPicture from "../../img/photo-paul.jpg"
-import {screen} from "@testing-library/react";
 
 function IntroBoard({lightMode, language, toggleDarkMode, toggleEnglishMode}) {
 
@@ -31,9 +30,9 @@ function IntroBoard({lightMode, language, toggleDarkMode, toggleEnglishMode}) {
             perso.style.left = "0";
         }, 750);
         const main = document.getElementsByTagName("main")[0];
+        main.style.display = "flex";
         main.style.animation = "positionswitch 1s forwards linear";
         main.style.animationDelay = "2s";
-        console.log(main);
     }
 
     return(

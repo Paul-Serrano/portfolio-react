@@ -39,8 +39,8 @@ function App() {
 
   return (
     <div className="App">
+        <IntroBoard lightMode={lightMode} language={langMode} toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>
         <main className={lightMode ? "main light-mode" : "main"}>
-            <IntroBoard lightMode={lightMode} language={langMode} toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>
             <div className="left-side">
                 <Nav language={langMode}/>
                 <Option class="settings" toggleDarkMode={toggleDarkMode} toggleEnglishMode={toggleEnglishMode}/>

@@ -14,15 +14,17 @@ function Nav({language}) {
         pro.style.animation = "slidebackright 1s forwards ease";
         perso.style.animation = "slidebackleft 1s forwards ease";
         setTimeout(function positionBack() {
-            pro.style.left = "100%";
-            perso.style.right = "100%";
+            pro.style.right = "100%";
+            perso.style.left = "100%";
         }, 1000)
         const introBoard = document.getElementsByClassName("intro-board")[0];
-        introBoard.style.display = "flex";
-        introBoard.style.animation = "fadeon 0.5s forwards linear";
+        setTimeout(function fadeOn() {
+            introBoard.style.display = "flex";
+            introBoard.style.animation = "fadeon 0.5s forwards linear";
+            }, 250
+        )
         const main = document.getElementsByTagName("main")[0];
-        main.style.animation = "positionswitchback 1s forwards linear";
-        main.style.animationDelay = "2s";
+        main.style.animation = "positionswitchback 0.01s forwards linear";
         console.log(main);
     }
 
